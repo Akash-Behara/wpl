@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: 'Gridular';
+      font-style: normal;
+      font-display: swap;
+      src: url(assets/font/Gridular-Regular.woff) format('woff');
+    }
+
+    @font-face {
+        font-family: 'Bienvenue';
+        font-style: normal;
+        font-display: swap;
+        src: url(assets/font/Bienvenu.ttf) format('woff');
+    }
+}
