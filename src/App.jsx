@@ -1,17 +1,11 @@
 import './App.css'
+import LandingPage from './pages/LandingPage'
 
 function App() {
 
   return (
-    <div className='flex text-3xl flex-col justify-center items-center'>
-        <div className='font-gridular uppercase'>
-        Apply now and complete mission to earn money 
-          
-        </div>
-
-        <div className='font-bienvenue uppercase'>
-         Apply now and complete mission to earn money 
-        </div>
+    <div className='min-h-dvh min-w-screen'>
+      <LandingPage />
     </div>
   )
 }

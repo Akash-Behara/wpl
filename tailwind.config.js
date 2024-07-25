@@ -10,6 +10,10 @@ export default {
         gridular: ["Gridular", "sans-serif"],
         bienvenue: ["Bienvenue", "sans-serif"],
       },
+      colors: {
+        primary: "#FAF1B1",
+        secondary: "#9FE7C7"
+      }
     },
   },
   plugins: [],
