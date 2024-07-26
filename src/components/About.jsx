@@ -11,7 +11,7 @@ import aboutRightCard from '../assets/subtract/about_right_card.svg'
 
 const About = () => {
   return (
-    <div className='mx-5 md:mx-[130px] mt-20'>
+    <div className='mx-5 md:mx-[130px] mt-32'>
         <div className='flex flex-col justify-center items-center text-center'>
             <h1 className='text-primary font-gridular text-[48px] leading-[45px] uppercase'>More About WPL</h1>
             
