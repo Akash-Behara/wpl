@@ -4,6 +4,7 @@ import About from '../components/About'
 import Faq from '../components/Faq'
 import Leaderboard from '../components/Leaderboard'
 import Features from '../components/Features'
+import Footer from '../components/Footer'
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
       <Leaderboard />
       <Features />
       <Faq />
+      <Footer />
     </div>
   )
 }
