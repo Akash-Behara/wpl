@@ -23,7 +23,8 @@ module.exports = {
       },
       colors: {
         primary: "#FAF1B1",
-        secondary: "#9FE7C7"
+        secondary: "#9FE7C7",
+        table_border_blue: '#27307F'
       },
       keyframes: {
         "accordion-down": {
