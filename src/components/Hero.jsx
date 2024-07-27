@@ -11,6 +11,7 @@ import bgYellowElLeft from '../assets/svg/bg_yellow_el_left.svg'
 import bgYellowElRight from '../assets/svg/bg_yellow_el_right.svg'
 import joinSubtract from '../assets/subtract/join_subtract.png'
 import startEarnSubtract from '../assets/subtract/start_earn_subtract.png'
+import { twMerge } from 'tailwind-merge';
 
 const Hero = () => {
 
@@ -20,13 +21,34 @@ const Hero = () => {
     });
   }, [])
 
-  const text = "reward";
-  const characters = text.split("");
-  const animationDuration = 1;
 
-  // const animateCharacter = (e) => {
 
-  // }
+  useEffect(() => {
+    const letters = document?.querySelectorAll('.letter');
+    let currentIndex = 0;
+    let timeout
+    
+    function animateLetter() {
+      const letter = letters[currentIndex];
+      letter.style.transition = 'transform 0.05s';
+      letter.style.transform = 'translateY(-9px)';
+
+      timeout = setTimeout(() => {
+        letter.style.transform = 'translateY(0)';
+        currentIndex = (currentIndex + 1) % letters.length;
+        animateLetter();
+      }, 120);
+    }
+    
+    animateLetter();
+
+    return () => {
+      clearTimeout(animateLetter);
+      clearTimeout(timeout);
+    }
+  }, [])
+
+
 
 
   return (
@@ -43,16 +65,18 @@ const Hero = () => {
         <div className='flex flex-col justify-center items-center mt-[100px]'>
           <div className='max-w-[1000px] flex flex-col justify-center items-center relative'>
             <h1 data-aos="fade-up" data-aos-delay="400" data-aos-duration="300" data-aos-easing="ease-in-out" className='font-gridular text-[42px] lg:text-[6.98em] text-primary text-center md:leading-[125px] uppercase'>Break Boundaries, 
-              <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='md:-translate-x-12 flex justify-center items-center gap-4 lg:gap-6'>Earn <span className='bg-[#E38070] text-[#1B1B83] text-[40px] lg:text-[84.17px] md:leading-[94.27px] md:px-5 lg:-ms-4 tracking-[0.12rem]'>Rewards</span></div>
+              <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='md:-translate-x-12 flex justify-center items-center gap-4 lg:gap-6'>Earn 
+                <span className='bg-[#E38070] text-[#1B1B83] text-[40px] lg:text-[84.17px] md:leading-[94.27px] md:px-5 lg:-ms-4 tracking-[0.12rem] flex'>
+                  <span class="letter">R</span>
+                  <span class="letter">E</span>
+                  <span class="letter">W</span>
+                  <span class="letter">A</span>
+                  <span class="letter">R</span>
+                  <span class="letter">D</span>
+                  <span class="letter">S</span>
+                </span>
+              </div>
             </h1>
-
-            {/* <div className="flex space-x-1 text-4xl font-bold">
-              <span className='r'>R</span>
-              <span className='e'>E</span>
-              <span className='w'>W</span>
-              <span className='a'>A</span>
-              <span className='rr'>R</span>
-            </div> */}
 
             <p className='font-bienvenue text-white mt-6 text-[14px] md:text-[20px] leading-5'>Apply now and complete mission to earn money</p>
             <img src={star} alt='yellow element' className='absolute -top-3 lg:top-3 left-0 lg:left-[126px] size-8'/>

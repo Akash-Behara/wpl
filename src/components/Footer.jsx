@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className='relative'>
       <div>
-        <img src={footerBg} className='h-[600px] md:size-full bg-cover bg-center ' />
+        <img src={footerBg} className='h-[600px] min-w-[1200px] bg-cover bg-center ' />
       </div>
       <div className='absolute top-0 left-0 size-full flex flex-col items-center z-30 p-10'>
         <div className='flex flex-col md:flex-row justify-center md:justify-between items-center w-full h-full'>
