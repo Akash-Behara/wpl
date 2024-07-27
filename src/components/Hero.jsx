@@ -9,8 +9,9 @@ import heroBg from '../assets/images/hero_bg_new.png'
 import star from '../assets/svg/hero_star.svg'
 import bgYellowElLeft from '../assets/svg/bg_yellow_el_left.svg'
 import bgYellowElRight from '../assets/svg/bg_yellow_el_right.svg'
-import joinSubtract from '../assets/subtract/join_subtract.png'
-import startEarnSubtract from '../assets/subtract/start_earn_subtract.png'
+import joinSubtract from '../assets/subtract/join_subtract.svg'
+import startEarnSubtract from '../assets/subtract/start_earn.svg'
+import FancyButton from './FancyButton';
 
 const Hero = () => {
 
@@ -60,15 +61,32 @@ const Hero = () => {
             <img src={bgYellowElLeft} alt='yellow element' className='absolute bottom-5 -left-14 size-6 md:size-14 text-red-500'/>
             <img src={bgYellowElRight} alt='yellow element' className='absolute -top-6 lg:-top-3 right-4 md:-right-3 size-6 md:size-14'/>
           </div>
-          <div className='font-gridular mt-12 flex items-center gap-4'>
-            <button className='relative w-[200px] md:w-[318px] text-center'>
+          <div className='font-gridular mt-12 flex items-center gap-4 md:text-[24px]'>
+            {/* <button className='relative w-[200px] md:w-[318px] text-center'>
               <img src={joinSubtract} alt='subtract' className='size-full'/>
               <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#10105E] md:text-[24px] py-3 uppercase size-full'>Join the pack</p>
-            </button>
-            <button className='relative w-[200px] md:w-[318px] text-center'>
+            </button> */}
+            <div className='w-[200px] md:w-[318px]'>
+              <FancyButton
+                src_img={joinSubtract}
+                className='font-gridular text-[#10105E]'
+                btn_txt='Join the pack'
+                alt_txt='join pack button'
+                isArrow={true}
+              />
+            </div>
+            <div className="w-[200px] md:w-[318px]">
+              <FancyButton
+                src_img={startEarnSubtract}
+                className='font-gridular text-white'
+                btn_txt='Start Earning'
+                alt_txt='start earning button'
+              />
+            </div>
+            {/* <button className='relative w-[200px] md:w-[318px] text-center'>
               <img src={startEarnSubtract} alt='subtract' className='size-full'/>
               <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white md:text-[24px] py-3 uppercase size-full'>Start Earning</p>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

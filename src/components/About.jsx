@@ -11,7 +11,7 @@ import aboutCard2Img from '../assets/subtract/about_card_2_wolf.svg'
 import aboutLowerCard from '../assets/subtract/about_lower_card.svg'
 import aboutRightCard from '../assets/subtract/about_right_card.svg'
 
-import joinSubtract from '../assets/subtract/join_subtract.png'
+import joinSubtract from '../assets/subtract/join_subtract.svg'
 
 import FancyButton from './FancyButton'
 
@@ -173,6 +173,7 @@ const About = () => {
                     src_img={joinSubtract}
                     btn_txt='Join the Mission'
                     alt_txt='join mission button'
+                    isArrow={true}
                 />
             </div>
         </div>

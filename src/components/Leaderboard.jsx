@@ -1,6 +1,6 @@
 import React from 'react'
 
-import view_box_full from '../assets/subtract/view_full_box.png'
+import view_box_full from '../assets/subtract/view_full_box.svg'
 import FancyButton from './FancyButton'
 import LeaderBoardTable from './LeaderBoardTable'
 
@@ -48,6 +48,7 @@ const Leaderboard = () => {
 					src_img={view_box_full}
 					className='font-gridular text-[16px] text-white'
 					btn_txt='View Full Leaderboard'
+					alt_txt='view full leaderboard button'
 				/>
 			</div>
     </div>
