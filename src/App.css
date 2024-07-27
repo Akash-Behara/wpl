@@ -142,3 +142,23 @@
   animation-delay: 2s;
   /* animation-fill-mode: forwards; */
 }
+
+
+
+.svg-icon {
+  width: 30px;
+  height: 30px;
+  background-color: currentColor;
+  mask: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sb...') no-repeat center;
+  -webkit-mask: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sb...') no-repeat center;
+}
+
+.hover-color {
+  color: #000000;
+  transition: color 0.5s;
+}
+
+.hover-color:hover {
+  color: #E38070;
+  transform: rotate(90deg);
+}

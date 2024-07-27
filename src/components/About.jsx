@@ -11,6 +11,10 @@ import aboutCard2Img from '../assets/subtract/about_card_2_wolf.svg'
 import aboutLowerCard from '../assets/subtract/about_lower_card.svg'
 import aboutRightCard from '../assets/subtract/about_right_card.svg'
 
+import joinSubtract from '../assets/subtract/join_subtract.png'
+
+import FancyButton from './FancyButton'
+
 const About = () => {
   return (
     <div className='mx-5 md:mx-[130px] mt-32'>
@@ -162,6 +166,14 @@ const About = () => {
                         </CardBody>
                     </CardContainer>
                 </div>
+            </div>
+            <div className="my-16">
+                <FancyButton
+                    className='font-gridular text-[24px] text-[#10105E]'
+                    src_img={joinSubtract}
+                    btn_txt='Join the Mission'
+                    alt_txt='join mission button'
+                />
             </div>
         </div>
     </div>

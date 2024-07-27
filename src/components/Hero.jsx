@@ -46,13 +46,13 @@ const Hero = () => {
               <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='md:-translate-x-12 flex justify-center items-center gap-4 lg:gap-6'>Earn <span className='bg-[#E38070] text-[#1B1B83] text-[40px] lg:text-[84.17px] md:leading-[94.27px] md:px-5 lg:-ms-4 tracking-[0.12rem]'>Rewards</span></div>
             </h1>
 
-            <div className="flex space-x-1 text-4xl font-bold">
+            {/* <div className="flex space-x-1 text-4xl font-bold">
               <span className='r'>R</span>
               <span className='e'>E</span>
               <span className='w'>W</span>
               <span className='a'>A</span>
               <span className='rr'>R</span>
-            </div>
+            </div> */}
 
             <p className='font-bienvenue text-white mt-6 text-[14px] md:text-[20px] leading-5'>Apply now and complete mission to earn money</p>
             <img src={star} alt='yellow element' className='absolute -top-3 lg:top-3 left-0 lg:left-[126px] size-8'/>
