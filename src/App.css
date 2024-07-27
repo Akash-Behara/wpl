@@ -18,7 +18,7 @@
     }
 }
 
-
+/* NAV HAMBURGER ICON */
 #nav-icon3{
   width: 40px;
   height: 1px;
@@ -90,4 +90,75 @@
   top: 10px;
   width: 0%;
   left: 50%;
+}
+
+
+/* CARD FLIP */
+.content {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+}
+
+
+
+
+
+/* App.css */
+/* App.css */
+/* App.css */
+/* App.css */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the value to control the height of the bounce */
+  }
+}
+
+.r {
+  animation: bounce 0.5s linear;
+  animation-delay: 2s;
+  /* animation-fill-mode: forwards; */
+}
+
+
+
+.svg-icon {
+  width: 30px;
+  height: 30px;
+  background-color: currentColor;
+  mask: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sb...') no-repeat center;
+  -webkit-mask: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sb...') no-repeat center;
+}
+
+.hover-color {
+  color: #000000;
+  transition: color 0.5s;
+}
+
+.hover-color:hover {
+  color: #E38070;
+  transform: rotate(90deg);
 }
