@@ -9,8 +9,20 @@ import heroBg from '../assets/images/hero_bg_new.png'
 import star from '../assets/svg/hero_star.svg'
 import bgYellowElLeft from '../assets/svg/bg_yellow_el_left.svg'
 import bgYellowElRight from '../assets/svg/bg_yellow_el_right.svg'
-import joinSubtract from '../assets/subtract/join_subtract.png'
-import startEarnSubtract from '../assets/subtract/start_earn_subtract.png'
+import joinSubtract from '../assets/subtract/join_subtract.svg'
+import startEarnSubtract from '../assets/subtract/start_earn.svg'
+
+import joinSubtractHover from '../assets/subtract/join_subtract_hover.svg'
+import startEarnSubtractHover from '../assets/subtract/start_earn_hover.svg'
+
+// Png subtract files
+import joinSubtractPng from '../assets/subtract_png/join_subtract.png'
+import joinSubtractHoverPng from '../assets/subtract_png/join_subtract_hover.png'
+
+import startEarnPng from '../assets/subtract_png/start_earn.png'
+import startEarnHoverPng from '../assets/subtract_png/start_earn_hover.png'
+
+import FancyButton from './FancyButton';
 
 const Hero = () => {
 
@@ -60,15 +72,24 @@ const Hero = () => {
             <img src={bgYellowElLeft} alt='yellow element' className='absolute bottom-5 -left-14 size-6 md:size-14 text-red-500'/>
             <img src={bgYellowElRight} alt='yellow element' className='absolute -top-6 lg:-top-3 right-4 md:-right-3 size-6 md:size-14'/>
           </div>
-          <div className='font-gridular mt-12 flex items-center gap-4'>
-            <button className='relative w-[200px] md:w-[318px] text-center'>
-              <img src={joinSubtract} alt='subtract' className='size-full'/>
-              <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#10105E] md:text-[24px] py-3 uppercase size-full'>Join the pack</p>
-            </button>
-            <button className='relative w-[200px] md:w-[318px] text-center'>
-              <img src={startEarnSubtract} alt='subtract' className='size-full'/>
-              <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white md:text-[24px] py-3 uppercase size-full'>Start Earning</p>
-            </button>
+          <div className='font-gridular mt-12 flex items-center gap-4 md:text-[24px]'>
+            <FancyButton
+              src_img={joinSubtractPng}
+              hover_src_img={joinSubtractHoverPng}
+              img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
+              className='font-gridular text-[#10105E] text-[14px] md:text-[24px]'
+              btn_txt='Join the pack'
+              alt_txt='join pack button'
+              isArrow={true}
+            />
+            <FancyButton
+              src_img={startEarnPng}
+              hover_src_img={startEarnHoverPng}
+              img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
+              className='font-gridular text-white text-[14px] md:text-[24px]'
+              btn_txt='Start Earning'
+              alt_txt='start earning button'
+            />
           </div>
         </div>
       </div>
