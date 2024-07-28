@@ -12,6 +12,11 @@ import aboutLowerCard from '../assets/subtract/about_lower_card.svg'
 import aboutRightCard from '../assets/subtract/about_right_card.svg'
 
 import joinSubtract from '../assets/subtract/join_subtract.svg'
+import joinSubtractHover from '../assets/subtract/join_subtract_hover.svg'
+
+// Png subtract files
+import joinSubtractPng from '../assets/subtract_png/join_subtract.png'
+import joinSubtractHoverPng from '../assets/subtract_png/join_subtract_hover.png'
 
 import FancyButton from './FancyButton'
 
@@ -169,8 +174,10 @@ const About = () => {
             </div>
             <div className="my-16">
                 <FancyButton
-                    className='font-gridular text-[24px] text-[#10105E]'
-                    src_img={joinSubtract}
+                    src_img={joinSubtractPng}
+                    hover_src_img={joinSubtractHoverPng}
+                    img_size_classes='w-[208px] md:w-[318px] h-[36.5px] md:h-[65px]'
+                    className='font-gridular text-[#10105E] text-[14px] md:text-[24px]'
                     btn_txt='Join the Mission'
                     alt_txt='join mission button'
                     isArrow={true}

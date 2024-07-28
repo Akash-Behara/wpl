@@ -1,12 +1,36 @@
-const FancyButton = ({src_img, className, btn_txt, alt_txt='Image alt text', isArrow=false}) => {
+import { useState } from "react";
+
+const FancyButton = ({
+  src_img, 
+  hover_src_img=src_img, 
+  img_size_classes='', 
+  className, 
+  btn_txt, 
+  alt_txt='Image alt text', 
+  isArrow=false
+}) => {
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = () => setIsHovered(!isHovered);
+
   return (
-    <button className='relative'>
-        <img src={src_img} alt={alt_txt} />
+    <button 
+      className='relative' 
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHover}
+    >
+        <img 
+          src={isHovered ? hover_src_img : src_img } 
+          alt={alt_txt}
+          className={img_size_classes}
+        />
         <div className="absolute inset-0 top-1/4 uppercase">
             <p className={className}>
-              {isArrow 
-                ? `${btn_txt} → ` 
-                : btn_txt}
+              {btn_txt}
+              {isArrow && (
+                <span className={`transition-all duration-300 ${isHovered ? 'ml-2' : ''}`}> →</span>
+              )}
             </p>
         </div>
     </button>
