@@ -20,6 +20,8 @@ module.exports = {
       fontFamily: {
         gridular: ["Gridular", "sans-serif"],
         bienvenue: ["Bienvenue", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
       },
       colors: {
         primary: "#FAF1B1",

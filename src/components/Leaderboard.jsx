@@ -11,7 +11,7 @@ const Leaderboard = () => {
     <div className='flex flex-col items-center justify-center mx-5 md:mx-3'>
 
 			{/* Title */}
-			<p className='font-gridular text-[48px] text-[#FAF1B1] my-8'>LEADERBOARD</p>
+			<p className='font-gridular text-[28px] md:text-[48px] text-[#FAF1B1] my-8'>LEADERBOARD</p>
 
 			{/* Table */}
 			<LeaderBoardTable />

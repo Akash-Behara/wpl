@@ -63,12 +63,12 @@ const Hero = () => {
 
 
   return (
-    <div className='min-h-screen'>
+    <div className='md:min-h-screen'>
       <div>
-        <img src={heroBg} className='absolute top-0 left-0 size-full max-h-[800px] md:min-h-[120vh] bg-cover bg-no-repeat bg-center' />
+        <img src={heroBg} className='absolute top-0 left-0 size-full max-h-[500px] md:max-h-[800px] md:min-h-[120vh] bg-cover bg-no-repeat bg-center' />
       </div>
 
-      <div className='size-full min-h-screen z-30 relative'>
+      <div className='size-full md:min-h-screen z-30 relative'>
         <div className='z-[100] opacity-100'>
           <NavBar />
         </div>
@@ -110,8 +110,8 @@ const Hero = () => {
               hover_src_img={startEarnHoverPng}
               img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
               className='font-gridular text-white text-[14px] md:text-[24px]'
-              btn_txt='Start Earning'
-              alt_txt='start earning button'
+              btn_txt='Redacted'
+              alt_txt='redacted button'
             />
           </div>
         </div>
@@ -120,12 +120,12 @@ const Hero = () => {
       <div className='mt-40'>
         <div className='flex flex-col text-center w-full'>
           <p className='text-[20px] font-bienvenue leading-6 text-white uppercase'>Out Partners</p>
-          <div className='w-full mt-6'>
-            <Marquee pauseOnHover reverse={true} className="[--duration:10s]">
+          <div className='w-full mt-8 flex justify-center items-center gap-16'>
+            {/* <Marquee pauseOnHover reverse={true} className="[--duration:10s]"> */}
               {partnersData.map((partner, idx) => (
-                <img src={partner.img} alt='partner' key={idx} className='w-[206px] h-[30px]'/>
+                <img src={partner.img} alt='partner' key={idx} className='w-[141px] md:w-[206px] h-[25px] md:h-[37px]'/>
               ))}
-            </Marquee>
+            {/* </Marquee> */}
           </div>
         </div>
       </div>

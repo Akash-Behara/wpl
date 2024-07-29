@@ -23,7 +23,7 @@ const WolfCard = ({key, wolf}) => {
                 <div className='front'>
                     <img src={marqueeCard} alt='about card 1' className='size-full'/>
                     <div className='w-[80%] absolute bottom-4 left-1/2 -translate-x-1/2 '>
-                        <div className='bg-[#16237f]/30 size-full absolute'/>
+                        <div className='bg-[#16237f]/40 size-full absolute'/>
                         <img src={marqueeWolf} alt='about card 1 img' className=''/>
                     </div>
                     <div className='absolute top-8 w-full text-start ps-7 pr-3'>
@@ -41,7 +41,7 @@ const WolfCard = ({key, wolf}) => {
 
 const MarqueeSection = () => {
   return (
-    <div className='h-screen flex flex-col justify-center items-center mt-14'>
+    <div className='md:h-screen flex flex-col justify-center items-center mt-14'>
         <div className='mb-16'>
             <h2 className='text-[28px] md:text-[48px] max-w-[230px] text-center md:max-w-full font-gridular text-primary uppercase'>Get into the wolfpack</h2>
         </div>
@@ -57,6 +57,14 @@ const MarqueeSection = () => {
                 <WolfCard key={wolf.text} wolf={wolf} />
             ))}
         </Marquee>
+
+        <div className='block md:hidden'>
+            <Marquee pauseOnHover reverse={true} className="[--duration:20s]">
+                {data.map((wolf) => (
+                    <WolfCard key={wolf.text} wolf={wolf} />
+                ))}
+            </Marquee>
+        </div>
 
         <div className="mt-16 hidden md:block">
             <FancyButton

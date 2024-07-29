@@ -41,7 +41,7 @@ const Features = () => {
 		{/* Group 1 */}
         <div className='text-white max-w-[400px]'>
 			{/* Title */}
-			<p className='font-gridular text-[48px] text-[#FAF1B1] uppercase'>Wpl Earn</p>
+			<p className='font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] text-[#FAF1B1] uppercase'>Wpl Earn</p>
 
 			{/* Description */}
 			<p className='text-[20px]'>Wolf pack League is a Mission program designed for special starkware wolf pack</p>
