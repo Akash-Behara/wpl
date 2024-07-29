@@ -17,7 +17,8 @@ const Card = ({ icon, title, description }) => {
         >
             <img 
                 src={isHovered ? card_subtract_hover : card_subtract } 
-                alt="WPL card" 
+                alt="WPL card"
+                className='opacity-30' 
             />
             <div className='absolute top-5 px-6'>
                 <div className='text-secondary group-hover:text-[#E38070] group-hover:rotate-90 max-w-fit transition-all duration-500'>
