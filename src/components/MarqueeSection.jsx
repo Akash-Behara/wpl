@@ -4,6 +4,10 @@ import Marquee from "./ui/marquee";
 
 import marqueeCard from '../assets/subtract/marquee_card.svg'
 import marqueeWolf from '../assets/svg/marquee_wolf.svg'
+import FancyButton from './FancyButton';
+
+import startEarnPng from '../assets/subtract_png/start_earn.png'
+import startEarnHoverPng from '../assets/subtract_png/start_earn_hover.png'
 
 const data = [
     {text: '#1', occ: "REDWOLF"},
@@ -53,6 +57,17 @@ const MarqueeSection = () => {
                 <WolfCard key={wolf.text} wolf={wolf} />
             ))}
         </Marquee>
+
+        <div className="mt-16 hidden md:block">
+            <FancyButton
+                src_img={startEarnPng}
+                hover_src_img={startEarnHoverPng}
+                img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
+                className='font-gridular text-white text-[14px] md:text-[24px]'
+                btn_txt='Join the pack'
+                alt_txt='joint the pack button'
+            />
+        </div>
     </div>
   )
 }
