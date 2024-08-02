@@ -9,76 +9,106 @@ import FancyButton from './FancyButton';
 import startEarnPng from '../assets/subtract_png/start_earn.png'
 import startEarnHoverPng from '../assets/subtract_png/start_earn_hover.png'
 
+// Wolf pack images
+import wolf1 from '../assets/images/wolf_pack/wolf_1.png'
+import wolf2 from '../assets/images/wolf_pack/wolf_2.png'
+import wolf3 from '../assets/images/wolf_pack/wolf_3.png'
+import wolf4 from '../assets/images/wolf_pack/wolf_4.png'
+import wolf5 from '../assets/images/wolf_pack/wolf_5.png'
+import wolf6 from '../assets/images/wolf_pack/wolf_6.png'
+import wolf7 from '../assets/images/wolf_pack/wolf_7.png'
+import wolf8 from '../assets/images/wolf_pack/wolf_8.png'
+import wolf9 from '../assets/images/wolf_pack/wolf_9.png'
+import wolf10 from '../assets/images/wolf_pack/wolf_10.png'
+import wolf11 from '../assets/images/wolf_pack/wolf_11.png'
+import wolf12 from '../assets/images/wolf_pack/wolf_12.png'
+import wolf13 from '../assets/images/wolf_pack/wolf_13.png'
+import wolf14 from '../assets/images/wolf_pack/wolf_14.png'
+
 const data = [
     {
         text: '1', 
         occ: "BLACKWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf1
     },
     {
         text: '2', 
         occ: "REDWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf2
     },
     {
         text: '3', 
         occ: "ARTICWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf3
     },
     {
         text: '4', 
         occ: "GRAYWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf4
     },
     {
         text: '5', 
         occ: "CELESTIALWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf5
     },
     {
         text: '6', 
         occ: "FIREWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf6
     },
     {
         text: '7', 
         occ: "PURPLEWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf7
     },
     {
         text: '8', 
         occ: "ICEWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf8
     },
     {
         text: '9', 
         occ: "THUNDERWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf9
     },
     {
         text: '10', 
         occ: "WARG", 
-        points:2500
+        points: 2500,
+        image: wolf10
     },
     {
         text: '11', 
         occ: "WEREWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf11
     },
     {
         text: '12', 
         occ: "FENRIR", 
-        points:2500
+        points: 2500,
+        image: wolf12
     },
     {
         text: '13', 
         occ: "DIREWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf13
     },
     {
         text: '14', 
         occ: "WHITEWOLF", 
-        points:2500
+        points: 2500,
+        image: wolf14
     },
 ]
 
@@ -90,7 +120,7 @@ const WolfCard = ({key, wolf}) => {
                     <img src={marqueeCard} alt='about card 1' className='size-full'/>
                     <div className='w-[80%] absolute bottom-4 left-1/2 -translate-x-1/2 '>
                         <div className='bg-[#16237f]/40 size-full absolute'/>
-                        <img src={`src/assets/images/wolf_pack/wolf_${wolf.text}.png`} alt='about card 1 img' className=''/>    
+                        <img src={wolf.image} alt='about card 1 img' className=''/>    
                     </div>
                     <div className='absolute top-8 w-full text-start ps-7 pr-3'>
                         <p className='text-[#E38070]'>#{wolf.text}</p>
