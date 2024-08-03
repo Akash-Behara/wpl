@@ -2,17 +2,14 @@ import React from 'react'
 
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
-import aboutCard1 from '../assets/subtract/about_card_1.svg'
 import aboutCard1Img from '../assets/subtract/about_card_1_wolf.svg'
-
-import aboutCard2 from '../assets/subtract/about_card_2.svg'
 import aboutCard2Img from '../assets/subtract/about_card_2_wolf.svg'
 
-import aboutLowerCard from '../assets/subtract/about_lower_card.svg'
-import aboutRightCard from '../assets/subtract/about_right_card.svg'
+import aboutLowerCard from '../assets/subtract_png/aboutlowercard.png'
+import aboutRightCard from '../assets/subtract_png/aboutrightcard.png'
 
-import joinSubtract from '../assets/subtract/join_subtract.svg'
-import joinSubtractHover from '../assets/subtract/join_subtract_hover.svg'
+// import joinSubtract from '../assets/subtract/join_subtract.svg'
+// import joinSubtractHover from '../assets/subtract/join_subtract_hover.svg'
 
 // Png subtract files
 import joinSubtractPng from '../assets/subtract_png/join_subtract.png'
@@ -20,7 +17,10 @@ import joinSubtractHoverPng from '../assets/subtract_png/join_subtract_hover.png
 
 import FancyButton from './FancyButton'
 import { AnimatedList } from './ui/animated-list';
-import { FollowerPointerCard } from './ui/following-pointer';
+// import { FollowerPointerCard } from './ui/following-pointer';
+
+import aboutcard1Png from '../assets/subtract_png/aboutcard1.png'
+import aboutcard2Png from '../assets/subtract_png/aboutcard2.png'
 
 const About = () => {
   return (
@@ -31,49 +31,49 @@ const About = () => {
             <div className='mt-10 flex flex-col lg:flex-row items-center gap-8'>
                 <div className='flex flex-col gap-8'>
                     <div className='flex flex-col items-center md:flex-row gap-8'>
-                        <CardContainer className='relative w-[300px] lg:w-[374px] h-[280px] lg:h-[357px]'>
+                        <CardContainer className='relative w-[300px] lg:w-[374px] '>
                             <CardBody className="bg-[#16237f] relative  w-auto sm:w-[30rem] h-auto rounded-xl">
                                 <CardItem
                                     translateZ="50"
                                     className=""
                                 >
-                                    <img src={aboutCard1} alt='about card 1' className='size-full'/>
+                                    <img src={aboutcard1Png} alt='about card 1' className='opacity-30 h-[360px] lg:h-[420px]'/>
                                 </CardItem>
                                 <CardItem
                                     translateZ="60"
                                     className="absolute top-0 left-0 w-full h-full rounded-xl"
                                 >
-                                    <div className='w-[80%] lg:w-3/4 absolute top-5 md:top-10 left-1/2 -translate-x-1/2 '>
+                                    <div className='w-[80%] lg:w-3/4 absolute top-5 md:top-8 left-1/2 translate-x-[-52%] '>
                                         <div className='bg-[#16237f]/20 size-full absolute'/>
-                                        <img src={aboutCard1Img} alt='about card 1 img' className=''/>
+                                        <img src={aboutCard1Img} alt='about card 1 img' className='size-full'/>
                                     </div>
-                                    <div className='absolute bottom-7 md:bottom-8 w-full text-start ps-8 md:ps-12 pr-3'>
-                                        <p className='lg:text-[20px] text-white font-gridular'>How devs can contibute</p>
-                                        <p className='text-[14px] lg:text-[16px] text-[#CCCCF8] font-light font-inter'>Devs get to complete milestones and earn rewards!</p>
+                                    <div className='absolute bottom-7 md:bottom-6 w-full text-start ps-8 md:ps-10 pr-3'>
+                                        <p className='lg:text-[20px] text-white font-gridular'>Are you a developer/builder?</p>
+                                        <p className='text-[14px] lg:text-[15px] text-[#CCCCF8] font-light font-inter mt-1'>You can now join the pack, and approved members can request to complete RFP's, earn based on milestones & build your proof of work</p>
                                     </div>
                                 </CardItem>
                             </CardBody>
                         </CardContainer>
 
-                        <CardContainer className='relative w-[300px] lg:w-[374px] h-[280px] lg:h-[357px]'>
+                        <CardContainer className='relative w-[300px] lg:w-[374px]'>
                             <CardBody className="bg-[#16237f] relative  w-auto sm:w-[30rem] h-auto rounded-xl">
                                 <CardItem
                                     translateZ="50"
                                     className=""
                                 >
-                                    <img src={aboutCard2} alt='about card 1' className='size-full'/>
+                                    <img src={aboutcard2Png} alt='about card 2' className='opacity-30 h-[360px] lg:h-[420px]'/>
                                 </CardItem>
                                 <CardItem
                                     translateZ="60"
                                     className="absolute top-0 left-0 w-full h-full rounded-xl"
                                 >
-                                    <div className='w-[80%] lg:w-3/4 absolute top-5 md:top-10 left-1/2 -translate-x-1/2 '>
+                                    <div className='w-[80%] lg:w-3/4 absolute top-5 md:top-8 left-1/2 translate-x-[-52%]'>
                                         <div className='bg-[#16237f]/20 size-full absolute'/>
                                         <img src={aboutCard2Img} alt='about card 1 img' className=''/>
                                     </div>
-                                    <div className='absolute bottom-7 md:bottom-8 w-full text-start ps-8 md:ps-12 pr-3'>
-                                        <p className='lg:text-[20px] text-white font-gridular'>How creators can contibute</p>
-                                        <p className='text-[14px] lg:text-[16px] text-[#CCCCF8] font-light font-inter'>Creators get to complete milestones and earn rewards!</p>
+                                    <div className='absolute bottom-12 w-full text-start ps-8 md:ps-12 pr-3'>
+                                        <p className='lg:text-[20px] text-white font-gridular'>Are you a non-technical and enjoy contributing?</p>
+                                        <p className='text-[14px] lg:text-[16px] text-[#CCCCF8] font-light font-inter mt-1'>You can write, create video content, evangelise, earn your rank and earn as a member of the pack</p>
                                         </div>
                                 </CardItem>
                             </CardBody>
@@ -84,15 +84,15 @@ const About = () => {
                         <CardContainer className='relative h-full w-full'>
                             <CardBody className="bg-[#16237f] relative w-auto  h-auto rounded-xl">
                                 <CardItem translateZ="50">
-                                    <img src={aboutLowerCard} alt='about card 1' className='size-full'/>
+                                    <img src={aboutLowerCard} alt='about card 1' className='opacity-30 h-[230px] lg:h-[200px]'/>
                                 </CardItem>
                                 <CardItem
                                     translateZ="60"
-                                    className="absolute -top-1 md:top-0 left-0 w-full h-full rounded-xl text-start p-5"
+                                    className="absolute top-1 md:top-3 left-0 w-full h-full rounded-xl text-start p-5"
                                 >
-                                    <h2 className='text-[11px] md:text-[16px] lg:text-[20px] text-white font-gridular'>Refer a friend to earn 10% of their points</h2>
-                                    <p className='text-[8px] md:text-[14px] lg:text-[16px] text-[#CCCCF8] font-light font-inter'>Devs get to complete milestones and earn rewards! Devs get to complete milestones and earn rewards! Devs get to complete milestones and earn rewards!</p>
-                                    <button className='text-[#CCCCF8] bg-[#CCCCF85C] px-2 py-0 md:px-8 md:py-2 text-[8px] md:text-[14px] font-medium mt-3 rounded-sm font-inter'>Copy Referral Code</button>
+                                    <h2 className='text-[16px] lg:text-[20px] text-white font-gridular'>Refer a friend to earn 10% of their points</h2>
+                                    <p className='text-[14px] lg:text-[16px] text-[#CCCCF8] font-light font-inter'>Members can refer their friends and earn a percentage of their points</p>
+                                    <button className='text-[#CCCCF8] bg-[#CCCCF85C] px-2 py-1 md:px-8 md:py-2 text-[14px] font-medium mt-3 rounded-sm font-inter'>Comming soon!</button>
                                 </CardItem>
                             </CardBody>
                         </CardContainer>
@@ -100,19 +100,19 @@ const About = () => {
                 </div>
 
                 <div>
-                    <CardContainer className=' md:w-[374px] h-[587px] relative'>
-                        <CardBody className="bg-[#16237f] relative  w-auto sm:w-[30rem] h-auto rounded-xl">
+                    <CardContainer className=' md:w-[374px] h-full relative'>
+                        <CardBody className="bg-[#16237f] relative h-full  w-auto sm:w-[30rem] rounded-xl">
                             <CardItem
                                 translateZ="50"
                                 className=""
                             >
-                                <img src={aboutRightCard} alt='about card 1' className='size-full'/>
+                                <img src={aboutRightCard} alt='about card 1' className='size-full h-[650px]'/>
                             </CardItem>
                             <CardItem
                                 translateZ="60"
                                 className="absolute top-0 left-0 w-full h-full rounded-xl p-5"
                             >
-                                <div className='mt-6 h-[20%]'>
+                                <div className='mt-6 h-[40%]'>
                                     <p className='text-[16px] md:text-[20px] text-white text-start font-gridular'>New Pack Members</p>
                                     <AnimatedList delay={3000}>
                                         <div className='flex items-center gap-3 mt-6'>
@@ -129,8 +129,8 @@ const About = () => {
                                         </div>
                                     </AnimatedList>
                                 </div>
-                                <div className='border-b border-[#57579D] my-6 h-[20%]'/>
-                                <div className='mt-6'>
+                                <div className='border-b border-[#57579D] my-6 '/>
+                                <div className='mt-6 h-[50%]'>
                                     <p className='text-[16px] md:text-[20px] text-white text-start font-gridular'>Recent Earners</p>
                                     <AnimatedList delay={2000}>
                                         <div className='flex justify-between items-center gap-3 mt-6'>

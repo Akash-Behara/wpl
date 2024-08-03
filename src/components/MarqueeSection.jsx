@@ -152,7 +152,7 @@ const MarqueeSection = () => {
   return (
     <div className='md:h-screen flex flex-col justify-center items-center mt-14'>
         <div className='mb-16'>
-            <h2 className='text-[28px] md:text-[48px] max-w-[230px] text-center md:max-w-full font-gridular text-primary uppercase'>Get into the wolfpack</h2>
+            <h2 className='text-[28px] md:text-[48px] max-w-[230px] text-center md:max-w-full font-gridular text-primary uppercase'>Join the wolfpack, earn your rank!</h2>
         </div>
 
         <Marquee pauseOnHover reverse={true} className="[--duration:20s]">

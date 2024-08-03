@@ -19,9 +19,6 @@ import FancyButton from './FancyButton';
 
 const partnersData = [
   {img: partnerImg, alt: 'partner'},
-  {img: partnerImg, alt: 'partner'},
-  {img: partnerImg, alt: 'partner'},
-  {img: partnerImg, alt: 'partner'},
 ]
 
 const Hero = () => {
@@ -89,7 +86,7 @@ const Hero = () => {
               </div>
             </h1>
 
-            <p className='font-bienvenue text-white mt-6 text-[14px] md:text-[20px] leading-5'>Apply now and complete mission to earn money</p>
+            <p className='font-bienvenue text-white mt-6 text-[14px] md:text-[20px] leading-5'>Apply now to join the pack and start earning</p>
             <img src={star} alt='yellow element' className='absolute -top-3 lg:top-3 left-0 lg:left-[126px] size-8'/>
             <img src={star} alt='yellow element' className='absolute bottom-7 md:bottom-20 right-0 lg:right-10 size-8'/>
             <img src={bgYellowElLeft} alt='yellow element' className='absolute bottom-5 -left-14 size-6 md:size-14 text-red-500'/>
@@ -119,7 +116,7 @@ const Hero = () => {
 
       <div className='mt-40'>
         <div className='flex flex-col text-center w-full'>
-          <p className='text-[20px] font-bienvenue leading-6 text-white uppercase'>Out Partners</p>
+          <p className='text-[20px] font-bienvenue leading-6 text-white uppercase'>Powered by</p>
           <div className='w-full mt-8 flex justify-center items-center gap-16'>
             {/* <Marquee pauseOnHover reverse={true} className="[--duration:10s]"> */}
               {partnersData.map((partner, idx) => (
