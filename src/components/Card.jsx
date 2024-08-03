@@ -26,8 +26,8 @@ const Card = ({ icon, title, description }) => {
                         <div className='text-secondary group-hover:text-[#E38070] group-hover:rotate-90 max-w-fit transition-all duration-500'>
                             {icon}
                         </div>
-                        <p className='text-[18px] py-2 text-white font-gridular'>{title}</p>
-                        <p className='text-white text-[14px] opacity-80 font-inter'>{description}</p>
+                        <p className='text-[18px] py-2 text-white font-gridular text-start'>{title}</p>
+                        <p className='text-white text-[14px] opacity-80 font-inter text-start'>{description}</p>
                     </div>
             </FollowerPointerCard>
     </div>
