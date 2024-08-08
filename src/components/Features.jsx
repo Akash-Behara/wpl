@@ -48,7 +48,7 @@ const Features = () => {
 
 			{/* Earning button */}
 
-			<div className='mt-5'>
+			<div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='mt-5'>
 				<FancyButton 
 					src_img={wpl_earn_btn}
 					hover_src_img={wpl_earn_btn_hover}
@@ -63,7 +63,7 @@ const Features = () => {
 		{/* Group 2 */}
 		<div className="grid grid-cols-12 gap-6 mt-16 lg:mt-0">
 			{cardData.map(({icon, title, description}, index) => (
-				<Card key={index} icon={icon} title={title} description={description} />
+				<Card key={index} icon={icon} title={title} description={description} delay={1000 + (index * 10)}/>
 			))}
 		</div>
     </div>
