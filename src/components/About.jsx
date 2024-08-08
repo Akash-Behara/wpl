@@ -31,16 +31,17 @@ const About = () => {
             <div className='mt-10 flex flex-col lg:flex-row items-center gap-8'>
                 <div className='flex flex-col gap-8'>
                     <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='flex flex-col items-center md:flex-row gap-8'>
-                        <CardContainer  className='relative w-[300px] lg:w-[374px] '>
+                        <CardContainer className='relative w-[300px] lg:w-[374px] '>
                             <CardBody className="bg-[#16237f] relative  w-auto sm:w-[30rem] h-auto rounded-xl">
                                 <CardItem
-                                    translateZ="50"
+                                    translateZ="20"
                                     className=""
+                                    rotateY={-2}
                                 >
                                     <img src={aboutcard1Png} alt='about card 1' className='opacity-30 h-[360px] lg:h-[420px]'/>
                                 </CardItem>
                                 <CardItem
-                                    translateZ="60"
+                                    translateZ="30"
                                     className="absolute top-0 left-0 w-full h-full rounded-xl"
                                 >
                                     <div className='w-[80%] lg:w-3/4 absolute top-5 md:top-8 left-1/2 translate-x-[-52%] '>
@@ -58,13 +59,13 @@ const About = () => {
                         <CardContainer className='relative w-[300px] lg:w-[374px]'>
                             <CardBody className="bg-[#16237f] relative  w-auto sm:w-[30rem] h-auto rounded-xl">
                                 <CardItem
-                                    translateZ="50"
+                                    translateZ="20"
                                     className=""
                                 >
                                     <img src={aboutcard2Png} alt='about card 2' className='opacity-30 h-[360px] lg:h-[420px]'/>
                                 </CardItem>
                                 <CardItem
-                                    translateZ="60"
+                                    translateZ="30"
                                     className="absolute top-0 left-0 w-full h-full rounded-xl"
                                 >
                                     <div className='w-[80%] lg:w-3/4 absolute top-5 md:top-8 left-1/2 translate-x-[-52%]'>
@@ -83,11 +84,11 @@ const About = () => {
                     <div data-aos="fade-up" data-aos-delay="1200" data-aos-duration="700">
                         <CardContainer className='relative h-full w-full'>
                             <CardBody className="bg-[#16237f] relative w-auto  h-auto rounded-xl">
-                                <CardItem translateZ="50">
+                                <CardItem translateZ="20" rotateY={-1}>
                                     <img src={aboutLowerCard} alt='about card 1' className='opacity-30 h-[230px] lg:h-[200px]'/>
                                 </CardItem>
                                 <CardItem
-                                    translateZ="60"
+                                    translateZ="30"
                                     className="absolute top-1 md:top-3 left-0 w-full h-full rounded-xl text-start p-5"
                                 >
                                     <h2 className='text-[16px] lg:text-[20px] text-white font-gridular'>Refer a friend to earn 10% of their points</h2>
@@ -103,13 +104,13 @@ const About = () => {
                     <CardContainer className=' md:w-[374px] h-full relative'>
                         <CardBody className="bg-[#16237f] relative h-full  w-auto sm:w-[30rem] rounded-xl">
                             <CardItem
-                                translateZ="50"
+                                translateZ="20"
                                 className=""
                             >
                                 <img src={aboutRightCard} alt='about card 1' className='size-full h-[650px]'/>
                             </CardItem>
                             <CardItem
-                                translateZ="60"
+                                translateZ="30"
                                 className="absolute top-0 left-0 w-full h-full rounded-xl p-5"
                             >
                                 <div className='mt-6 h-[40%]'>
