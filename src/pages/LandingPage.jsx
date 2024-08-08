@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 const LandingPage = () => {
   useEffect(() => {
     AOS.init({
-      once: false
+      once: true
     });
   }, [])
   return (
