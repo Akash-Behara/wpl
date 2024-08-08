@@ -37,7 +37,7 @@ const cardData = [
 
 const Features = () => {
   return (
-    <div className='my-32 lg:mx-[130px] flex flex-col justify-center items-center lg:items-start md:justify-between text-center lg:flex-row lg:text-start'>
+    <div className='my-32 lg:mx-[130px] flex flex-col justify-center items-center xl:items-start xl:justify-between text-center xl:flex-row xl:text-start'>
 		{/* Group 1 */}
         <div className='text-white max-w-[300px] md:max-w-[420px]'>
 			{/* Title */}
@@ -61,7 +61,7 @@ const Features = () => {
 		</div>
 
 		{/* Group 2 */}
-		<div className="grid grid-cols-12 gap-6 mt-16 lg:mt-0">
+		<div className="grid grid-cols-12 gap-6 mt-16 xl:mt-0">
 			{cardData.map(({icon, title, description}, index) => (
 				<Card key={index} icon={icon} title={title} description={description} delay={1000 + (index * 10)}/>
 			))}
