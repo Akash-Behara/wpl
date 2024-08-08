@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import wolfLogo from '../assets/svg/wolf_logo.svg'
+import GlyphEffect from './GlyphEffect'
+
 
 function NavBar() {
 
@@ -21,14 +23,14 @@ function NavBar() {
     <div className='w-full pt-8'>
       <div className='hidden md:flex justify-between items-center font-bienvenue mx-5 md:mx-[130px]'>
         <div className='flex items-center gap-6'>
-          <h2 className='text-primary text-[18px]'>HOME</h2>
-          <h2 className='text-primary text-[18px]'>ABOUT</h2>
+          <h2 className='text-primary text-[18px]'><GlyphEffect text={'HOME'}/></h2>
+          <h2 className='text-primary text-[18px]'><GlyphEffect text={'ABOUT'}/></h2>
         </div>
         <img src={wolfLogo} alt='wolf logo' className='translate-x-14 w-14 h-16'/>
         <div className='flex items-center gap-6'>
-          <h2 className='text-primary text-[18px]'>EARN</h2>
-          <h2 className='text-primary text-[18px]'>LEADERBOARD</h2>
-          <h2 className='text-primary text-[18px]'>FAQ</h2>
+          <h2 className='text-primary text-[18px]'><GlyphEffect text={'EARN'}/></h2>
+          <h2 className='text-primary text-[18px]'><GlyphEffect text={'LEADERBOARD'}/></h2>
+          <h2 className='text-primary text-[18px]'><GlyphEffect text={'FAQ'}/></h2>
         </div>
       </div>
 
