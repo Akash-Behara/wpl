@@ -14,6 +14,7 @@ import startEarnPng from '../assets/subtract_png/start_earn.png'
 import startEarnHoverPng from '../assets/subtract_png/start_earn_hover.png'
 import Marquee from './ui/marquee';
 import FancyButton from './FancyButton';
+import { Parallax } from 'react-scroll-parallax'
 
 const partnersData = [
   {img: partnerImg, alt: 'partner'},
@@ -54,9 +55,12 @@ const Hero = () => {
 
   return (
     <div className='md:min-h-screen'>
-      <div>
-        <img src={heroBg} className='absolute top-0 left-0 size-full max-h-[500px] md:max-h-[800px] md:min-h-[120vh] bg-cover bg-no-repeat bg-center' />
-      </div>
+      <Parallax speed={-20}>
+        <div>
+          <img src={heroBg} className='scale-[100%] absolute top-[-200px] left-0 size-full max-h-[500px] md:max-h-[800px] md:min-h-[120vh] bg-cover bg-no-repeat bg-center' />
+        </div>
+      </Parallax>
+      
 
       <div className='size-full md:min-h-screen z-30 relative'>
         <div className='z-[100] opacity-100'>
