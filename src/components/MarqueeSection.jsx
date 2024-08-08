@@ -120,10 +120,10 @@ const WolfCard = ({key, wolf}) => {
                     <img src={marqueeCard} alt='about card 1' className='size-full'/>
                     <div className='w-[80%] absolute bottom-4 left-1/2 -translate-x-1/2 '>
                         <div className='bg-[#16237f]/40 size-full absolute'/>
-                        <img src={wolf.image} alt='about card 1 img' className=''/>    
+                        <img src={wolf.image} alt='about card 1 img' />    
                     </div>
                     <div className='absolute top-8 w-full text-start ps-7 pr-3'>
-                        <p className='text-[#E38070]'>#{wolf.text}</p>
+                        <p className='text-[#E38070] font-bevan'>#{wolf.text}</p>
                         <p className='text-[25px] text-primary font-bienvenue'>{wolf.occ}</p>
                     </div>
                 </div>
@@ -133,12 +133,12 @@ const WolfCard = ({key, wolf}) => {
                         <p className='text-[25px] text-primary font-bienvenue'>{wolf.occ}</p>
                         <div className='border border-b-white opacity-30 my-2'></div>
                         <div className='mb-2'>
-                            <p className='text-[#E38070]'>RANK</p>
-                            <p className=''>#{wolf.text}</p>
+                            <p className='text-[#E38070] font-bevan'>RANK</p>
+                            <p className='font-inter opacity-80'>#{wolf.text}</p>
                         </div>
                         <div>
-                            <p className='text-[#E38070]'>XP REQUIRED</p>
-                            <p className=''>{wolf.points} WP</p>
+                            <p className='text-[#E38070] font-bevan'>XP REQUIRED</p>
+                            <p className='font-inter backdrop-opacity-80'>{wolf.points} WP</p>
                         </div>
 
                     </div>

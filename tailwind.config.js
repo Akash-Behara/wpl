@@ -22,6 +22,7 @@ module.exports = {
         bienvenue: ["Bienvenue", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
+        bevan: ["Bevan", "sans-serif"]
       },
       colors: {
         primary: "#FAF1B1",
