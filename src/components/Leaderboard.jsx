@@ -17,7 +17,7 @@ const Leaderboard = () => {
 			<LeaderBoardTable />
 
 			{/* View full button */}
-			<div className="mt-10">
+			<div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className="mt-10">
 				<FancyButton
 					src_img={startEarnPng}
 					hover_src_img={startEarnHoverPng}

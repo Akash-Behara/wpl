@@ -175,7 +175,7 @@ const MarqueeSection = () => {
             </Marquee>
         </div>
 
-        <div className="mt-16 hidden md:block">
+        <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className="mt-16 hidden md:block">
             <FancyButton
                 src_img={startEarnPng}
                 hover_src_img={startEarnHoverPng}

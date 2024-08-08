@@ -17,7 +17,7 @@ const faq = [
 
 const Faq = () => {
   return (
-    <div className='flex flex-col justify-center items-center mt-20 md:mt-0 md:min-h-[105vh]'>
+    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='flex flex-col justify-center items-center mt-20 md:mt-0 md:min-h-[105vh]'>
         <div>
             <h1 className='text-pretty font-gridular text-[#FAF1B1] text-[28px] md:text-[48px] leading-[45px]'>FAQ</h1>
         </div>
@@ -25,7 +25,7 @@ const Faq = () => {
         <div className='min-w-[350px] md:min-w-[500px] lg:min-w-[912px] mt-14'>
             <Accordion type="single" collapsible>
                 {faq.map((item, index) => (
-                    <AccordionItem key={index} value={`item-${index}`} className="border-[#E4E7EC1A] mb-4">
+                    <AccordionItem data-aos="fade-up" data-aos-delay={1000 * (index * 10)} data-aos-duration="700" key={index} value={`item-${index}`} className="border-[#E4E7EC1A] mb-4">
                         <AccordionTrigger className="text-white text-[14px] md:text-[18px] font-medium hover:no-underline font-inter">{item.title}</AccordionTrigger>
                         <AccordionContent className="text-white/80 font-inter text-[12px] md:text-[16px]">
                             {item.content}
