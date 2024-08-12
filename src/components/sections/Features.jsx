@@ -1,8 +1,8 @@
-import wpl_earn_btn from '../assets/subtract_png/wpl_earn.png'
-import wpl_earn_btn_hover from '../assets/subtract_png/wpl_earn_hover.png'
-import Card from './Card'
+import wpl_earn_btn from '../../assets/subtract_png/wpl_earn.png'
+import wpl_earn_btn_hover from '../../assets/subtract_png/wpl_earn_hover.png'
+import Card from '../Card'
 
-import FancyButton from './FancyButton'
+import FancyButton from '../FancyButton'
 
 const cardData = [
 	{
@@ -41,10 +41,10 @@ const Features = () => {
 		{/* Group 1 */}
         <div className='text-white max-w-[300px] md:max-w-[420px]'>
 			{/* Title */}
-			<p className='font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] text-[#FAF1B1] uppercase'>Wpl Earn</p>
+			<p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] text-[#FAF1B1] uppercase'>Wpl Earn</p>
 
 			{/* Description */}
-			<p className='text-[16px] text-white/80 font-inter font-light leading-[20px] mt-2'>Participants who refer new members to the program will receive a 10% share of the points earned by these new members during their first year</p>
+			<p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='text-[16px] text-white/80 font-inter font-light leading-[20px] mt-2'>Participants who refer new members to the program will receive a 10% share of the points earned by these new members during their first year</p>
 
 			{/* Earning button */}
 

@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
-import Hero from '../components/Hero'
-import About from '../components/About'
-import Faq from '../components/Faq'
+import Hero from '../components/sections/Hero'
+import About from '../components/sections/About'
+import Faq from '../components/sections/Faq'
 import Leaderboard from '../components/Leaderboard'
-import Features from '../components/Features'
-import Footer from '../components/Footer'
-import MarqueeSection from '../components/MarqueeSection'
+import Features from '../components/sections/Features'
+import Footer from '../components/sections/Footer'
+import MarqueeSection from '../components/sections/MarqueeSection'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 

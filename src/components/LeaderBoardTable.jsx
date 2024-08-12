@@ -42,19 +42,19 @@ const LeaderboardTable = () => {
               <span className="hidden md:inline">Rank</span>
               <span className="md:hidden">#</span>  
             </th>
-            <th className="py-3 leading-[9.6px] text-[8px] lg:px-14 px-6 md:text-[12px] font-normal border-t  border-table_border_blue font-inter">Name</th>
-            <th className="py-3 leading-[9.6px] text-[8px] lg:px-14 px-6 md:text-[12px] font-normal border-t  border-table_border_blue font-inter hidden md:table-cell">WPL Points</th>
-            <th className="py-3 leading-[9.6px] text-[8px] lg:px-14 px-6 md:text-[12px] font-normal border-t  border-table_border_blue font-inter hidden md:table-cell">Bounty Points</th>
-            <th className="py-3 leading-[9.6px] text-[8px] lg:px-14 px-6 md:text-[12px] font-normal border-t  border-table_border_blue font-inter hidden md:table-cell">Role</th>
-            <th className="py-3 leading-[9.6px] text-[8px] lg:px-14 px-6 md:text-[12px] font-normal border-t  border-table_border_blue font-inter">Rewards</th>
-            <th className="py-3 leading-[9.6px] text-[8px] lg:px-14 px-6 md:text-[12px] font-normal border-t border-r border-table_border_blue font-inter">Total Points</th>
+            <th className="py-4 leading-[9.6px] text-[8px] lg:px-14 px-6 md:text-[12px] font-normal border-t  border-table_border_blue font-inter">Name</th>
+            <th className="py-4 leading-[9.6px] text-[8px] lg:px-1 px-6 md:text-[12px] font-normal border-t  border-table_border_blue font-inter hidden md:table-cell">WPL Points</th>
+            <th className="py-4 leading-[9.6px] text-[8px] lg:px-1 px-6 md:text-[12px] font-normal border-t  border-table_border_blue font-inter hidden md:table-cell">Bounty Points</th>
+            <th className="py-4 leading-[9.6px] text-[8px] lg:px-14 px-6 md:text-[12px] font-normal border-t  border-table_border_blue font-inter hidden md:table-cell">Role</th>
+            <th className="py-4 leading-[9.6px] text-[8px] lg:px-14 px-6 md:text-[12px] font-normal border-t  border-table_border_blue font-inter">Rewards</th>
+            <th className="py-4 leading-[9.6px] text-[8px] lg:px-1 px-6 md:text-[12px] font-normal border-t border-r border-table_border_blue font-inter">Total Points</th>
           </tr>
         </thead>
         <tbody className='border border-table_border_blue w-full'>
             {data.map((row, index) => (
-              <tr key={index} className="text-center 10px md:text-[14px] font-medium border-t border-table_border_blue">
-                <td className="py-3 md:px-14 px-6 text-[10px] md:text-[16px] font-normal border-l border-table_border_blue">{`#${row.rank}`}</td>
-                <td className="py-3 md:px-14 px-1 text-[10px] md:text-[16px] flex items-center justify-center border-l border-table_border_blue font-inter ">
+              <tr key={index} className="text-center text-[10px] md:text-[14px] font-medium border-t border-table_border_blue">
+                <td className="py-4 md:px-14 px-6 font-normal border-l border-table_border_blue">{`#${row.rank}`}</td>
+                <td className="py-4 md:px-9 px-1 flex items-center justify-center border-l border-table_border_blue font-inter ">
                   <img
                     src={board_profile}
                     alt="Profile"
@@ -62,11 +62,11 @@ const LeaderboardTable = () => {
                   />
                   {row.name}
                 </td>
-                <td className="py-3 lg:px-14 px-6 text-[10px] md:text-[16px] border-l border-table_border_blue font-inter  hidden md:table-cell">{row.wplPoints}</td>
-                <td className="py-3 lg:px-14 px-6 text-[10px] md:text-[16px] border-l border-table_border_blue font-inter  hidden md:table-cell">{row.bountyPoints}</td>
-                <td className="py-3 lg:px-14 px-6 text-[10px] md:text-[16px] border-l border-table_border_blue font-inter  hidden md:table-cell">{row.role}</td>
-                <td className="py-3 lg:px-14 px-6 text-[10px] md:text-[16px] border-l border-table_border_blue font-inter " >{row.rewards}</td>
-                <td className="py-3 lg:px-14 px-6 text-[10px] md:text-[16px] border-l border-r border-table_border_blue font-inter "><NumberTicker value={row.totalPoints} className='text-white'/></td>
+                <td className="py-4 lg:px-14 px-6 border-l border-table_border_blue font-inter  hidden md:table-cell">{row.wplPoints}</td>
+                <td className="py-4 lg:px-14 px-6 border-l border-table_border_blue font-inter  hidden md:table-cell">{row.bountyPoints}</td>
+                <td className="py-4 lg:px-14 px-6 border-l border-table_border_blue font-inter  hidden md:table-cell">{row.role}</td>
+                <td className="py-4 lg:px-14 px-6 border-l border-table_border_blue font-inter " >{row.rewards}</td>
+                <td className="py-4 lg:px-14 px-6 border-l border-r border-table_border_blue font-inter "><NumberTicker value={row.totalPoints} className='text-white'/></td>
               </tr>
             ))}
         </tbody>

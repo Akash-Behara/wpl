@@ -1,19 +1,19 @@
 import React, { useEffect, useRef } from 'react'
-import NavBar from './NavBar'
+import NavBar from '../NavBar'
 
 
-import heroBg from '../assets/images/hero_bg_new.png'
-import partnerImg from '../assets/images/starkware.png'
+import heroBg from '../../assets/images/hero_bg_new.png'
+import partnerImg from '../../assets/images/starkware.png'
 
-import star from '../assets/svg/hero_star.svg'
-import bgYellowElLeft from '../assets/svg/bg_yellow_el_left.svg'
-import bgYellowElRight from '../assets/svg/bg_yellow_el_right.svg'
-import joinSubtractPng from '../assets/subtract_png/join_subtract.png'
-import joinSubtractHoverPng from '../assets/subtract_png/join_subtract_hover.png'
-import startEarnPng from '../assets/subtract_png/start_earn.png'
-import startEarnHoverPng from '../assets/subtract_png/start_earn_hover.png'
-import Marquee from './ui/marquee';
-import FancyButton from './FancyButton';
+import star from '../../assets/svg/hero_star.svg'
+import bgYellowElLeft from '../../assets/svg/bg_yellow_el_left.svg'
+import bgYellowElRight from '../../assets/svg/bg_yellow_el_right.svg'
+import joinSubtractPng from '../../assets/subtract_png/join_subtract.png'
+import joinSubtractHoverPng from '../../assets/subtract_png/join_subtract_hover.png'
+import startEarnPng from '../../assets/subtract_png/start_earn.png'
+import startEarnHoverPng from '../../assets/subtract_png/start_earn_hover.png'
+// import Marquee from '../../ui/marquee';
+import FancyButton from '../FancyButton';
 import { Parallax } from 'react-scroll-parallax'
 
 const partnersData = [
@@ -23,8 +23,6 @@ const partnersData = [
 const Hero = () => {
 
   const rewardRef = useRef(null);
-
-
 
   useEffect(() => {
     const letters = document?.querySelectorAll('.letter');
@@ -54,15 +52,19 @@ const Hero = () => {
 
 
   return (
-    <div className='md:min-h-screen'>
+    <div id="home_section" className='md:min-h-screen'>
+      {/* <Parallax speed={-20}>
+        <img src={heroBg} className='scale-[100%] w-full absolute top-[-200px] left-0 md:max-h-[800px] md:min-h-[100vh] bg-cover ' />
+      </Parallax> */}
+
       <Parallax speed={-20}>
-        <div>
-          <img src={heroBg} className='scale-[100%] absolute top-[-200px] left-0 size-full max-h-[500px] md:max-h-[800px] md:min-h-[120vh] bg-cover bg-no-repeat bg-center' />
+        <div className='relative'>
+          <img src={heroBg} className='absolute top-[-200px] left-0 h-full w-full min-h-[80vh] md:min-h-[100vh] object-left md:object-center object-cover' />
+          <div className='hidden md:block absolute top-[700px] lg:top-[520px] bg-gradient-to-b from-[#071470] to-[#162178]/70 h-20 w-full z-[100]'/>
         </div>
       </Parallax>
       
-
-      <div className='size-full md:min-h-screen z-30 relative'>
+      <div className='size-full z-30 relative'>
         <div className='z-[100] opacity-100'>
           <NavBar />
         </div>
@@ -86,7 +88,7 @@ const Hero = () => {
             <p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='font-bienvenue text-white mt-6 text-[14px] md:text-[20px] leading-5'>Apply now to join the pack and start earning</p>
             <img src={star} alt='yellow element' className='absolute -top-3 lg:top-3 left-0 lg:left-[126px] size-8'/>
             <img src={star} alt='yellow element' className='absolute bottom-7 md:bottom-20 right-0 lg:right-10 size-8'/>
-            <img src={bgYellowElLeft} alt='yellow element' className='absolute -bottom-14 -left-10 size-6 md:size-14 text-red-500'/>
+            <img src={bgYellowElLeft} alt='yellow element' className='absolute -bottom-8 lg:-bottom-14 -left-20 lg:-left-10 size-6 md:size-14 text-red-500'/>
             <img src={bgYellowElRight} alt='yellow element' className='absolute -top-12 lg:-top-16 right-4 md:-right-12 size-6 md:size-14'/>
           </div>
           <div className='font-gridular mt-12 flex items-center gap-4 md:text-[24px]'>
@@ -111,10 +113,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='mt-40'>
+      <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='mt-32 z-100'>
         <div className='flex flex-col text-center w-full'>
           <p className='text-[20px] font-bienvenue leading-6 text-white uppercase'>Powered by</p>
-          <div className='w-full mt-8 flex justify-center items-center gap-16'>
+          <div className='w-full mt-6 flex justify-center items-center gap-16'>
             {/* <Marquee pauseOnHover reverse={true} className="[--duration:10s]"> */}
               {partnersData.map((partner, idx) => (
                 <img src={partner.img} alt='partner' key={idx} className='w-[141px] md:w-[206px] h-[25px] md:h-[37px]'/>
