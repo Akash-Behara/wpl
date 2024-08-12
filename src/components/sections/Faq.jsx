@@ -5,7 +5,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "./ui/accordion"
+} from "../ui/accordion"
 
 const faq = [
     {title: 'What is the WPL?', content: 'WPL is a contribution based Builder & Content Creator programme with the goal to incentivise high value participants and build an exclusive community of evangelists'},
@@ -17,7 +17,7 @@ const faq = [
 
 const Faq = () => {
   return (
-    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='flex flex-col justify-center items-center mt-20 md:mt-0 md:min-h-[105vh]'>
+    <div id="faq_section" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='flex flex-col justify-center items-center mt-20 md:mt-0 md:min-h-[110vh] mb-20'>
         <div>
             <h1 className='text-pretty font-gridular text-[#FAF1B1] text-[28px] md:text-[48px] leading-[45px]'>FAQ</h1>
         </div>

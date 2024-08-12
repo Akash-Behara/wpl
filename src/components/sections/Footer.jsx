@@ -1,7 +1,7 @@
 import React from 'react'
 
-import footerBg from '../assets/images/footer_bg.png'
-import wolfLogo from '../assets/svg/wolf_logo_footer.svg'
+import footerBg from '../../assets/images/footer_bg.png'
+import wolfLogo from '../../assets/svg/wolf_logo_footer.svg'
 
 const Footer = () => {
 
@@ -13,8 +13,8 @@ const Footer = () => {
       <div className='absolute top-0 left-0 size-full flex flex-col items-center z-30 p-10 pb-5'>
         <div className='flex flex-col md:flex-row justify-center md:justify-between items-center w-full h-full'>
           <div className='translate-y-36 md:translate-y-14 flex flex-col justify-center md:justify-start items-center md:items-start'>
-            <h2 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='text-[#16237F] font-gridular text-[24px] md:text-[48px] leading-[26px] md:leading-[52px] max-w-[627px] uppercase text-center md:text-start'>become a part of wpl to earn rewards</h2>
-            <button data-aos="fade-up" data-aos-delay="1100" data-aos-duration="700" className='bg-[#16237F] text-white font-bienvenue text-[20px] md:text-[24px] px-6 py-1 flex justify-center items-center mt-4'>Apply now</button>
+            <h2 data-aos="fade-up" data-aos-delay="800" data-aos-duration="700" className='text-[#16237F] font-gridular text-[24px] md:text-[48px] leading-[26px] md:leading-[52px] max-w-[627px] uppercase text-center md:text-start'>become a part of wpl to earn rewards</h2>
+            <button data-aos="fade-up" data-aos-delay="900" data-aos-duration="700" className='bg-[#16237F] text-white font-bienvenue text-[20px] md:text-[24px] px-6 py-1 flex justify-center items-center mt-4'>Apply now</button>
           </div>
           <div className='flex justify-end items-end text-center md:text-start gap-10 h-full max-w-fit mb-10 -translate-y-2'>
             <div className='flex flex-col gap-4 text-[12px] font-normal text-[#16237F] uppercase leading-[12px] font-bienvenue'>

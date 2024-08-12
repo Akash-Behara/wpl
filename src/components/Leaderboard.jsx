@@ -8,16 +8,16 @@ import startEarnHoverPng from '../assets/subtract_png/start_earn_hover.png'
 
 const Leaderboard = () => {
   return (
-    <div className='flex flex-col items-center justify-center mx-5 md:mx-3'>
+    <div id="leaderboard_section" className='flex flex-col items-center justify-center mx-5 md:mx-3'>
 
 			{/* Title */}
-			<p className='font-gridular text-[28px] md:text-[48px] text-[#FAF1B1] my-8'>LEADERBOARD</p>
+			<p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='font-gridular text-[28px] md:text-[48px] text-[#FAF1B1] my-8'>LEADERBOARD</p>
 
 			{/* Table */}
 			<LeaderBoardTable />
 
 			{/* View full button */}
-			<div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className="mt-10">
+			<div id="features_section" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className="mt-10">
 				<FancyButton
 					src_img={startEarnPng}
 					hover_src_img={startEarnHoverPng}

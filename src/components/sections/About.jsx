@@ -1,38 +1,38 @@
 import React from 'react'
 
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
-import aboutCard1Img from '../assets/subtract/about_card_1_wolf.svg'
-import aboutCard2Img from '../assets/subtract/about_card_2_wolf.svg'
+import aboutCard1Img from '../../assets/subtract/about_card_1_wolf.svg'
+import aboutCard2Img from '../../assets/subtract/about_card_2_wolf.svg'
 
-import aboutLowerCard from '../assets/subtract_png/aboutlowercard.png'
-import aboutRightCard from '../assets/subtract_png/aboutrightcard.png'
+import aboutLowerCard from '../../assets/subtract_png/aboutlowercard.png'
+import aboutRightCard from '../../assets/subtract_png/aboutrightcard.png'
 
-// import joinSubtract from '../assets/subtract/join_subtract.svg'
-// import joinSubtractHover from '../assets/subtract/join_subtract_hover.svg'
+// import joinSubtract from '../../assets/subtract/join_subtract.svg'
+// import joinSubtractHover from '../../assets/subtract/join_subtract_hover.svg'
 
 // Png subtract files
-import joinSubtractPng from '../assets/subtract_png/join_subtract.png'
-import joinSubtractHoverPng from '../assets/subtract_png/join_subtract_hover.png'
+import joinSubtractPng from '../../assets/subtract_png/join_subtract.png'
+import joinSubtractHoverPng from '../../assets/subtract_png/join_subtract_hover.png'
 
-import FancyButton from './FancyButton'
-import { AnimatedList } from './ui/animated-list';
+import FancyButton from '../FancyButton'
+import { AnimatedList } from '../ui/animated-list';
 // import { FollowerPointerCard } from './ui/following-pointer';
 
-import aboutcard1Png from '../assets/subtract_png/aboutcard1.png'
-import aboutcard2Png from '../assets/subtract_png/aboutcard2.png'
+import aboutcard1Png from '../../assets/subtract_png/aboutcard1.png'
+import aboutcard2Png from '../../assets/subtract_png/aboutcard2.png'
 
 const About = () => {
   return (
-    <div className='mx-5 md:mx-[130px] mt-32'>
+    <div id="about_section" className='mx-5 md:mx-[130px] mt-32 z-[101] relative'>
         <div className='flex flex-col justify-center items-center text-center'>
-            <h1  className='text-primary font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] uppercase'>More About WPL</h1>
+            <h1 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700"  className='text-primary font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] uppercase'>More About WPL</h1>
             
             <div className='mt-10 flex flex-col lg:flex-row items-center gap-8'>
                 <div className='flex flex-col gap-8'>
                     <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='flex flex-col items-center md:flex-row gap-8'>
                         <CardContainer className='relative w-[300px] lg:w-[374px] '>
-                            <CardBody className="bg-[#16237f] relative  w-auto sm:w-[30rem] h-auto rounded-xl">
+                            <CardBody className="bg-[#16237f] relative h-auto rounded-xl">
                                 <CardItem
                                     translateZ="20"
                                     className=""
@@ -72,7 +72,7 @@ const About = () => {
                                         <div className='bg-[#16237f]/20 size-full absolute'/>
                                         <img src={aboutCard2Img} alt='about card 1 img' className=''/>
                                     </div>
-                                    <div className='absolute bottom-12 w-full text-start ps-8 md:ps-12 pr-3'>
+                                    <div className='absolute bottom-12 w-full text-start ps-8 md:ps-10 pr-3'>
                                         <p className='lg:text-[20px] text-white font-gridular'>Are you a non-technical and enjoy contributing?</p>
                                         <p className='text-[14px] lg:text-[16px] text-[#CCCCF8] font-light font-inter mt-1'>You can write, create video content, evangelise, earn your rank and earn as a member of the pack</p>
                                         </div>
@@ -177,7 +177,7 @@ const About = () => {
                     </CardContainer>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className="my-16">
+            <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="700" className="my-16">
                 <FancyButton
                     src_img={joinSubtractPng}
                     hover_src_img={joinSubtractHoverPng}

@@ -39,6 +39,10 @@
   }
 }
 
+html, body{
+  scroll-behavior: smooth;
+}
+
 /* NAV HAMBURGER ICON */
 #nav-icon3{
   width: 40px;
