@@ -91,9 +91,8 @@ const About = () => {
                                     translateZ="30"
                                     className="absolute top-1 md:top-3 left-0 w-full h-full rounded-xl text-start p-5"
                                 >
-                                    <h2 className='text-[16px] lg:text-[20px] text-white font-gridular'>Refer a friend to earn 10% of their points</h2>
-                                    <p className='text-[14px] lg:text-[16px] text-[#CCCCF8] font-light font-inter'>Members can refer their friends and earn a percentage of their points</p>
-                                    <button className='text-[#CCCCF8] bg-[#CCCCF85C] px-2 py-1 md:px-8 md:py-2 text-[14px] font-medium mt-3 rounded-sm font-inter'>Comming soon!</button>
+                                    <h2 className='text-[16px] lg:text-[20px] text-white font-gridular'>Leaderboard Tiers</h2>
+                                    <p className='text-[14px] lg:text-[16px] text-[#CCCCF8] font-light font-inter mt-3'>Advance through Leaderboard Tiers by earning points and claim rewards at each level (Puppy to Dire Wolf). Register on OnlyDust with your Github account, follow the rules, and complete KYC to receive rewards.</p>
                                 </CardItem>
                             </CardBody>
                         </CardContainer>
