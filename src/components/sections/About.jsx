@@ -26,11 +26,11 @@ const About = () => {
   return (
     <div id="about_section" className='mx-5 md:mx-[130px] mt-32 z-[101] relative'>
         <div className='flex flex-col justify-center items-center text-center'>
-            <h1 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700"  className='text-primary font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] uppercase'>More About WPL</h1>
+            <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"  className='text-primary font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] uppercase'>More About WPL</h1>
             
             <div className='mt-10 flex flex-col lg:flex-row items-center gap-8'>
                 <div className='flex flex-col gap-8'>
-                    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='flex flex-col items-center md:flex-row gap-8'>
+                    <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="700" className='flex flex-col items-center md:flex-row gap-8'>
                         <CardContainer className='relative w-[300px] lg:w-[374px] '>
                             <CardBody className="bg-[#16237f] relative h-auto rounded-xl">
                                 <CardItem
@@ -81,7 +81,7 @@ const About = () => {
                         </CardContainer>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-delay="1200" data-aos-duration="700">
+                    <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
                         <CardContainer className='relative h-full w-full'>
                             <CardBody className="bg-[#16237f] relative w-auto  h-auto rounded-xl">
                                 <CardItem translateZ="20" rotateY={-1}>
@@ -100,7 +100,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700">
+                <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">
                     <CardContainer className=' md:w-[374px] h-full relative'>
                         <CardBody className="bg-[#16237f] relative h-full  w-auto sm:w-[30rem] rounded-xl">
                             <CardItem
