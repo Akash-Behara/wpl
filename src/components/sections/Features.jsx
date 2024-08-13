@@ -41,20 +41,20 @@ const Features = () => {
 		{/* Group 1 */}
         <div className='text-white max-w-[300px] md:max-w-[420px]'>
 			{/* Title */}
-			<p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] text-[#FAF1B1] uppercase'>Wpl Earn</p>
+			<p data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className='font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] text-[#FAF1B1] uppercase'>Wpl Earn</p>
 
 			{/* Description */}
-			<p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='text-[16px] text-white/80 font-inter font-light leading-[20px] mt-2'>Participants who refer new members to the program will receive a 10% share of the points earned by these new members during their first year</p>
+			<p data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className='text-[16px] text-white/80 font-inter font-light leading-[20px] mt-2'>Join, Participate, Contribute and Earn!</p>
 
 			{/* Earning button */}
 
-			<div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='mt-5'>
+			<div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className='mt-5'>
 				<FancyButton 
 					src_img={wpl_earn_btn}
 					hover_src_img={wpl_earn_btn_hover}
 					img_size_classes='w-[146px] md:w-[269px] h-[35.2px] md:h-[55px]'
 					className='font-gridular text-white text-[14px] md:text-[20.3px]'
-					btn_txt='Redacted'
+					btn_txt='Coming soon'
 					alt_txt='wpl_earn_btn'
 				/>
 			</div>
@@ -63,7 +63,7 @@ const Features = () => {
 		{/* Group 2 */}
 		<div className="grid grid-cols-12 gap-6 mt-16 xl:mt-0">
 			{cardData.map(({icon, title, description}, index) => (
-				<Card key={index} icon={icon} title={title} description={description} delay={1000 + (index * 10)}/>
+				<Card key={index} icon={icon} title={title} description={description} delay={500 + (index * 10)}/>
 			))}
 		</div>
     </div>

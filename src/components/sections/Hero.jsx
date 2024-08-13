@@ -64,11 +64,7 @@ const Hero = () => {
         </div>
       </Parallax>
       
-      <div className='size-full z-30 relative'>
-        <div className='z-[100] opacity-100'>
-          <NavBar />
-        </div>
-
+      <div className='size-full z-30 relative pt-20'>
         <div className='flex flex-col justify-center items-center mt-[100px]'>
           <div className='max-w-[1000px] flex flex-col justify-center items-center relative'>
             <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="300" data-aos-easing="ease-in-out" className='font-gridular text-[42px] lg:text-[6.98em] text-primary text-center md:leading-[125px] uppercase'>Build Create, 
@@ -113,7 +109,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="600" className='mt-32 z-100'>
+      <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='mt-32 z-100'>
         <div className='flex flex-col text-center w-full'>
           <p className='text-[20px] font-bienvenue leading-6 text-white uppercase'>Powered by</p>
           <div className='w-full mt-6 flex justify-center items-center gap-16'>

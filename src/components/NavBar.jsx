@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import wolfLogo from '../assets/svg/wolf_logo.svg'
 import GlyphEffect from './GlyphEffect'
+import { Link } from 'react-router-dom'
 
 
 function NavBar() {
@@ -24,7 +25,7 @@ function NavBar() {
     <div className='w-full pt-8'>
       <div className='hidden md:flex justify-between items-center font-bienvenue mx-5 lg:mx-[130px]'>
         <div className='flex items-center gap-6'>
-          <p onClick={() => document.getElementById('home_section').scrollIntoView({ behavior: 'smooth' })} className='text-primary text-[18px]'><GlyphEffect text={'HOME'}/></p>
+          <Link to={'/'} className='text-primary text-[18px]'><GlyphEffect text={'HOME'}/></Link>
           <p onClick={() => document.getElementById('about_section').scrollIntoView({ behavior: 'smooth' })} className='text-primary text-[18px]'><GlyphEffect text={'ABOUT'}/></p>
         </div>
         <img src={wolfLogo} alt='wolf logo' className='translate-x-14 w-14 h-16'/>
