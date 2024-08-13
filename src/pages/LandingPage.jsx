@@ -25,7 +25,6 @@ const LandingPage = () => {
       <Features />
       <MarqueeSection />
       <Faq />
-      <Footer />
     </div>
   )
 }

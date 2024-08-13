@@ -2,9 +2,9 @@ import React from 'react'
 
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
-import aboutCard1Img from '../../assets/subtract/about_card_1_wolf.svg'
-import aboutCard2Img from '../../assets/subtract/about_card_2_wolf.svg'
-
+import aboutCard2Img from '../../assets/subtract_png/aboutcard1Img.png'
+import aboutCard1Img from '../../assets/subtract_png/aboutcard2Img.png'
+ 
 import aboutLowerCard from '../../assets/subtract_png/aboutlowercard.png'
 import aboutRightCard from '../../assets/subtract_png/aboutrightcard.png'
 
@@ -21,16 +21,20 @@ import { AnimatedList } from '../ui/animated-list';
 
 import aboutcard1Png from '../../assets/subtract_png/aboutcard1.png'
 import aboutcard2Png from '../../assets/subtract_png/aboutcard2.png'
+import startEarnPng from '../../assets/subtract_png/start_earn.png'
+import startEarnHoverPng from '../../assets/subtract_png/start_earn_hover.png'
+import { about_table_data } from '../..//utils/leaderboard_dummy_data';
+
 
 const About = () => {
   return (
     <div id="about_section" className='mx-5 md:mx-[130px] mt-32 z-[101] relative'>
         <div className='flex flex-col justify-center items-center text-center'>
-            <h1 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700"  className='text-primary font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] uppercase'>More About WPL</h1>
+            <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"  className='text-primary font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] uppercase'>More About WPL</h1>
             
             <div className='mt-10 flex flex-col lg:flex-row items-center gap-8'>
                 <div className='flex flex-col gap-8'>
-                    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='flex flex-col items-center md:flex-row gap-8'>
+                    <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="700" className='flex flex-col items-center md:flex-row gap-8'>
                         <CardContainer className='relative w-[300px] lg:w-[374px] '>
                             <CardBody className="bg-[#16237f] relative h-auto rounded-xl">
                                 <CardItem
@@ -81,7 +85,7 @@ const About = () => {
                         </CardContainer>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-delay="1200" data-aos-duration="700">
+                    <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
                         <CardContainer className='relative h-full w-full'>
                             <CardBody className="bg-[#16237f] relative w-auto  h-auto rounded-xl">
                                 <CardItem translateZ="20" rotateY={-1}>
@@ -89,17 +93,25 @@ const About = () => {
                                 </CardItem>
                                 <CardItem
                                     translateZ="30"
-                                    className="absolute top-1 md:top-3 left-0 w-full h-full rounded-xl text-start p-5"
+                                    className="absolute top-0 left-0 w-full h-full rounded-xl text-start p-5"
                                 >
                                     <h2 className='text-[16px] lg:text-[20px] text-white font-gridular'>Leaderboard Tiers</h2>
-                                    <p className='text-[14px] lg:text-[16px] text-[#CCCCF8] font-light font-inter mt-3'>Advance through Leaderboard Tiers by earning points and claim rewards at each level (Puppy to Dire Wolf). Register on OnlyDust with your Github account, follow the rules, and complete KYC to receive rewards.</p>
+                                    <p className='text-[14px] lg:text-[16px] text-[#CCCCF8] font-light font-inter mt-3 mb-4 leading-5'>Advance through Leaderboard Tiers by earning points and claim rewards at each level (Puppy to Dire Wolf). Register on OnlyDust with your Github account, follow the rules, and complete KYC to receive rewards.</p>
+                                    <FancyButton
+                                        src_img={startEarnPng}
+                                        hover_src_img={startEarnHoverPng}
+                                        img_size_classes='w-[167px] h-[34.5px]'
+                                        className='font-gridular text-white text-[14px] uppercase'
+                                        btn_txt='learn more'
+                                        alt_txt='redacted button'
+                                    />
                                 </CardItem>
                             </CardBody>
                         </CardContainer>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700">
+                <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">
                     <CardContainer className=' md:w-[374px] h-full relative'>
                         <CardBody className="bg-[#16237f] relative h-full  w-auto sm:w-[30rem] rounded-xl">
                             <CardItem
@@ -130,45 +142,24 @@ const About = () => {
                                     </AnimatedList>
                                 </div>
                                 <div className='border-b border-[#57579D] my-6 '/>
-                                <div className='mt-6 h-[50%]'>
+                                <div className='mt-6 h-[50%] overflow-hidden'>
                                     <p className='text-[16px] md:text-[20px] text-white text-start font-gridular'>Recent Earners</p>
                                     <AnimatedList delay={2000}>
-                                        <div className='flex justify-between items-center gap-3 mt-6'>
-                                            <div className='flex items-center gap-4'>
-                                                <img src={aboutCard1Img} alt='about card 1 img' className='size-9 rounded-full object-cover'/>
-                                                <div className='text-start'>
-                                                    <p className='text-[14px] md:text-[16px] text-white font-medium font-inter'>Tiamyu Absulsamad</p>
-                                                    <p className='text-[#9292BA] text-[14px] font-light'>Superteam Vietnam: De..</p>
+                                        {about_table_data.map((data, idx) => 
+                                            <div className='flex justify-between items-center gap-3 mt-6'>
+                                                <div className='flex items-center gap-4'>
+                                                    <img src={aboutCard1Img} alt='about card 1 img' className='size-9 rounded-full object-cover'/>
+                                                    <div className='text-start'>
+                                                        <p className='text-[14px] md:text-[16px] text-white font-medium font-inter'>{data.tier}</p>
+                                                        <p className='text-[#9292BA] text-[14px] font-light'>Superteam Vietnam: De..</p>
+                                                    </div>
+                                                </div>
+                                                <div className='text-[14px] font-light text-white'>
+                                                    {data.reward} USDC
                                                 </div>
                                             </div>
-                                            <div className='text-[14px] font-light text-white'>
-                                                500 USDC
-                                            </div>
-                                        </div>
-                                        <div className='flex justify-between items-center gap-3 mt-6'>
-                                            <div className='flex items-center gap-4'>
-                                                <img src={aboutCard1Img} alt='about card 1 img' className='size-9 rounded-full object-cover'/>
-                                                <div className='text-start'>
-                                                    <p className='text-[14px] md:text-[16px] text-white font-medium font-inter'>Tiamyu Absulsamad</p>
-                                                    <p className='text-[#9292BA] text-[14px] font-light'>Superteam Vietnam: De..</p>
-                                                </div>
-                                            </div>
-                                            <div className='text-[14px] font-light text-white'>
-                                                500 USDC
-                                            </div>
-                                        </div>
-                                        <div className='flex justify-between items-center gap-3 mt-6'>
-                                            <div className='flex items-center gap-4'>
-                                                <img src={aboutCard1Img} alt='about card 1 img' className='size-9 rounded-full object-cover'/>
-                                                <div className='text-start'>
-                                                    <p className='text-[14px] md:text-[16px] text-white font-medium font-inter'>Tiamyu Absulsamad</p>
-                                                    <p className='text-[#9292BA] text-[14px] font-light'>Superteam Vietnam: De..</p>
-                                                </div>
-                                            </div>
-                                            <div className='text-[14px] font-light text-white'>
-                                                500 USDC
-                                            </div>
-                                        </div>
+                                        )}
+                                      
                                     </AnimatedList>
                                 </div>
                             </CardItem>

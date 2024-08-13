@@ -183,7 +183,7 @@ const MarqueeSection = () => {
                 hover_src_img={startEarnHoverPng}
                 img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
                 className='font-gridular text-white text-[14px] md:text-[24px]'
-                btn_txt='Join the pack'
+                btn_txt='Learn more'
                 alt_txt='joint the pack button'
             />
         </div>
