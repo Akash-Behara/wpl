@@ -61,9 +61,9 @@ const Features = () => {
 		</div>
 
 		{/* Group 2 */}
-		<div className="grid grid-cols-12 gap-6 mt-16 xl:mt-0">
+		<div data-aos="fade-up" data-aos-delay="700" data-aos-duration="700" className="grid grid-cols-12 gap-6 mt-16 xl:mt-0">
 			{cardData.map(({icon, title, description}, index) => (
-				<Card key={index} icon={icon} title={title} description={description} delay={500 + (index * 10)}/>
+				<Card key={index} icon={icon} title={title} description={description}/>
 			))}
 		</div>
     </div>

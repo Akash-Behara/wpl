@@ -4,7 +4,7 @@ import card_subtract from '../assets/subtract_png/card_subtract.png'
 import card_subtract_hover from '../assets/subtract_png/card_subtract_hover.png'
 import { FollowerPointerCard } from './ui/following-pointer';
 
-const Card = ({ icon, title, description, delay }) => {
+const Card = ({ icon, title, description }) => {
 
     const [isHovered, setIsHovered] = useState(false);
 
@@ -12,7 +12,6 @@ const Card = ({ icon, title, description, delay }) => {
 
     return (
         <div 
-            data-aos="fade-up" data-aos-delay={delay} data-aos-duration="700"
             className="col-span-12 md:col-span-6 mt-6 md:mt-0 relative w-[330px] h-[160px] md:h-[187px] group"
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
