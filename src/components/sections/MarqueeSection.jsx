@@ -12,106 +12,99 @@ import startEarnPng from '../../assets/subtract_png/start_earn.png'
 import startEarnHoverPng from '../../assets/subtract_png/start_earn_hover.png'
 
 // Wolf pack images
-import wolf1 from '../../assets/images/wolf_pack/wolf_1.png'
-import wolf2 from '../../assets/images/wolf_pack/wolf_2.png'
-import wolf3 from '../../assets/images/wolf_pack/wolf_3.png'
-import wolf4 from '../../assets/images/wolf_pack/wolf_4.png'
-import wolf5 from '../../assets/images/wolf_pack/wolf_5.png'
-import wolf6 from '../../assets/images/wolf_pack/wolf_6.png'
-import wolf7 from '../../assets/images/wolf_pack/wolf_7.png'
-import wolf8 from '../../assets/images/wolf_pack/wolf_8.png'
-import wolf9 from '../../assets/images/wolf_pack/wolf_9.png'
-import wolf10 from '../../assets/images/wolf_pack/wolf_10.png'
-import wolf11 from '../../assets/images/wolf_pack/wolf_11.png'
-import wolf12 from '../../assets/images/wolf_pack/wolf_12.png'
-import wolf13 from '../../assets/images/wolf_pack/wolf_13.png'
-import wolf14 from '../../assets/images/wolf_pack/wolf_14.png'
+import puppy from '../../assets/images/wolf_pack/Puppy.png'
+import redwolf from '../../assets/images/wolf_pack/Redwolf.png'
+import arcticwolf from '../../assets/images/wolf_pack/Arctic.png'
+import graywolf from '../../assets/images/wolf_pack/Gray.png'
+import celestialwolf from '../../assets/images/wolf_pack/Celestial.png'
+import firewolf from '../../assets/images/wolf_pack/Fire.png'
+import shadowwolf from '../../assets/images/wolf_pack/Shadow.png'
+import icewolf from '../../assets/images/wolf_pack/ice.png'
+import thunderwolf from '../../assets/images/wolf_pack/Thunder.png'
+import warg from '../../assets/images/wolf_pack/Warg.png'
+import werewolf from '../../assets/images/wolf_pack/Werewolf.png'
+import fenrir from '../../assets/images/wolf_pack/Fenrir.png'
+import direwolf from '../../assets/images/wolf_pack/Direwolf.png'
 
 const data = [
     {
         text: '1', 
-        occ: "BLACKWOLF", 
-        points: 2500,
-        image: wolf1
+        occ: "Puppy", 
+        points: 330,
+        image: puppy
     },
     {
         text: '2', 
         occ: "REDWOLF", 
-        points: 2500,
-        image: wolf2
+        points: 990,
+        image: redwolf
     },
     {
         text: '3', 
         occ: "ARTICWOLF", 
-        points: 2500,
-        image: wolf3
+        points: 1980,
+        image: arcticwolf
     },
     {
         text: '4', 
         occ: "GRAYWOLF", 
-        points: 2500,
-        image: wolf4
+        points: 3300,
+        image: graywolf
     },
     {
         text: '5', 
         occ: "CELESTIALWOLF", 
-        points: 2500,
-        image: wolf5
+        points: 4950,
+        image: celestialwolf
     },
     {
         text: '6', 
         occ: "FIREWOLF", 
-        points: 2500,
-        image: wolf6
+        points: 6930,
+        image: firewolf
     },
     {
         text: '7', 
-        occ: "PURPLEWOLF", 
-        points: 2500,
-        image: wolf7
+        occ: "SHADOWWOLF", 
+        points: 9240,
+        image: shadowwolf
     },
     {
         text: '8', 
         occ: "ICEWOLF", 
-        points: 2500,
-        image: wolf8
+        points: 11880,
+        image: icewolf
     },
     {
         text: '9', 
         occ: "THUNDERWOLF", 
-        points: 2500,
-        image: wolf9
+        points: 14850,
+        image: thunderwolf
     },
     {
         text: '10', 
         occ: "WARG", 
-        points: 2500,
-        image: wolf10
+        points: 18150,
+        image: warg
     },
     {
         text: '11', 
         occ: "WEREWOLF", 
-        points: 2500,
-        image: wolf11
+        points: 21780,
+        image: werewolf
     },
     {
         text: '12', 
         occ: "FENRIR", 
-        points: 2500,
-        image: wolf12
+        points: 25740,
+        image: fenrir
     },
     {
         text: '13', 
         occ: "DIREWOLF", 
-        points: 2500,
-        image: wolf13
-    },
-    {
-        text: '14', 
-        occ: "WHITEWOLF", 
-        points: 2500,
-        image: wolf14
-    },
+        points: 30030,
+        image: direwolf
+    }
 ]
 
 const WolfCard = ({key, wolf}) => {
