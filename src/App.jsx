@@ -1,10 +1,20 @@
+import { useEffect } from 'react';
 import './App.css'
 import NavBar from './components/NavBar'
 import Footer from './components/sections/Footer'
 
 import RoutesPublic from './routes/Routes'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      once: true
+    });
+  }, [])
 
   return (
     <div className='min-h-dvh min-w-screen size-full bg-[#16237f] scroll-smooth overflow-hidden'>

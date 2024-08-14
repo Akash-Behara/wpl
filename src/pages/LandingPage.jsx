@@ -7,16 +7,10 @@ import Features from '../components/sections/Features'
 import Footer from '../components/sections/Footer'
 import MarqueeSection from '../components/sections/MarqueeSection'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 
 
 const LandingPage = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true
-    });
-  }, [])
+  
   return (
     <div className='bg-[#16237f] size-full overflow-x-hidden'>
       <Hero />
