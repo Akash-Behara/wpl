@@ -114,7 +114,6 @@ const WolfCard = ({key, wolf}) => {
                 <div className='front'>
                     <img src={marqueeFronPng} alt='about card 1' className='size-full'/>
                     <div className='w-[80%] absolute bottom-4 left-1/2 -translate-x-1/2 '>
-                        <div className='bg-[#16237f]/40 size-full absolute'/>
                         <img src={wolf.image} alt='about card 1 img' />    
                     </div>
                     <div className='absolute top-8 w-full text-start ps-7 pr-3'>
