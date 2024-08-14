@@ -12,7 +12,7 @@ import MarqueeSection from '../components/sections/MarqueeSection'
 const LandingPage = () => {
   
   return (
-    <div className='bg-[#16237f] size-full overflow-x-hidden'>
+    <div className='bg-[#16237f] size-full overflow-y-hidden overflow-x-hidden'>
       <Hero />
       <About />
       <Leaderboard />

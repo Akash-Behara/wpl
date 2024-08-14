@@ -26,6 +26,10 @@ import werewolf from '../../assets/images/wolf_pack/Werewolf.png'
 import fenrir from '../../assets/images/wolf_pack/Fenrir.png'
 import direwolf from '../../assets/images/wolf_pack/Direwolf.png'
 
+import joinSubtractPng from '../../assets/subtract_png/join_subtract.png'
+import joinSubtractHoverPng from '../../assets/subtract_png/join_subtract_hover.png'
+
+
 const data = [
     {
         text: '1', 
@@ -171,12 +175,13 @@ const MarqueeSection = () => {
 
         <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className="mt-16 hidden md:block">
             <FancyButton
-                src_img={startEarnPng}
-                hover_src_img={startEarnHoverPng}
-                img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
-                className='font-gridular text-white text-[14px] md:text-[24px]'
-                btn_txt='Learn more'
-                alt_txt='joint the pack button'
+                src_img={joinSubtractPng}
+                hover_src_img={joinSubtractHoverPng}
+                img_size_classes='w-[208px] md:w-[318px] h-[36.5px] md:h-[65px]'
+                className='font-gridular text-[#10105E] text-[14px] md:text-[24px]'
+                btn_txt='Join the Mission'
+                alt_txt='join mission button'
+                isArrow={true}
             />
         </div>
     </div>

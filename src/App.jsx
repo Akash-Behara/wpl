@@ -12,12 +12,14 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      once: true
+      once: true,
+      easing: 'ease-in-out',
+      offset: 1
     });
   }, [])
 
   return (
-    <div className='min-h-dvh min-w-screen size-full bg-[#16237f] scroll-smooth overflow-hidden'>
+    <div className='min-h-dvh min-w-screen size-full bg-[#16237f] scroll-smooth'>
       <div className='absolute top-0 left-0 w-full z-[100] opacity-100'>
         <NavBar />
       </div>

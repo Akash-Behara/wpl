@@ -52,10 +52,7 @@ const Hero = () => {
 
 
   return (
-    <div id="home_section" className='md:min-h-screen relative'>
-      {/* <Parallax speed={-20}>
-        <img src={heroBg} className='scale-[100%] w-full absolute top-[-200px] left-0 md:max-h-[800px] md:min-h-[100vh] bg-cover ' />
-      </Parallax> */}
+    <div id="home_section" className='relative h-full'>
 
       <Parallax speed={-20}>
         <div className='relative h-full w-full border border-white'>
@@ -112,11 +109,9 @@ const Hero = () => {
         <div className='flex flex-col text-center w-full'>
           <p className='text-[20px] font-bienvenue leading-6 text-white uppercase'>Powered by</p>
           <div className='w-full mt-6 flex justify-center items-center gap-16'>
-            {/* <Marquee pauseOnHover reverse={true} className="[--duration:10s]"> */}
               {partnersData.map((partner, idx) => (
                 <img src={partner.img} alt='partner' key={idx} className='w-[141px] md:w-[206px] h-[25px] md:h-[37px]'/>
               ))}
-            {/* </Marquee> */}
           </div>
         </div>
       </div>
