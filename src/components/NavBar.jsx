@@ -31,7 +31,7 @@ function NavBar() {
         <img src={wolfLogo} alt='wolf logo' className='translate-x-14 w-14 h-16'/>
         <div className='flex items-center gap-6'>
           <p onClick={() => document.getElementById('features_section').scrollIntoView({ behavior: 'smooth' })} className='text-primary text-[18px]'><GlyphEffect text={'EARN'}/></p>
-          <p onClick={() => document.getElementById('leaderboard_section').scrollIntoView({ behavior: 'smooth' })} className='text-primary text-[18px]'><GlyphEffect text={'LEADERBOARD'}/></p>
+          <Link to={'/leaderboard'} className='text-primary text-[18px]'><GlyphEffect text={'LEADERBOARD'}/></Link>
           <p onClick={() => document.getElementById('faq_section').scrollIntoView({ behavior: 'smooth' })} className='text-primary text-[18px]'><GlyphEffect text={'FAQ'}/></p>
         </div>
       </div>

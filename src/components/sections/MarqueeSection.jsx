@@ -132,7 +132,7 @@ const WolfCard = ({key, wolf}) => {
                             <p className='font-inter opacity-80'>#{wolf.text}</p>
                         </div>
                         <div>
-                            <p className='text-[#E38070] font-bevan'>XP REQUIRED</p>
+                            <p className='text-[#E38070] font-bevan'>POINTS</p>
                             <p className='font-inter backdrop-opacity-80'>{wolf.points} WP</p>
                         </div>
 
