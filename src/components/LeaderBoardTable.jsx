@@ -3,7 +3,7 @@
 const LeaderboardTable = ({data}) => {
   
   return (
-    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className="flex items-center justify-center mx-5">
+    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className="flex items-center justify-center">
       <table className="lg:w-[1187px] w-full min-w-[410px] h-[259px] bg-[#0F1971] text-white leading-[24px]">
         <thead>
           <tr className='bg-[#0F1C79] text-[#CCCCF8]'>
