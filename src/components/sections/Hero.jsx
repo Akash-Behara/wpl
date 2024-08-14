@@ -52,15 +52,14 @@ const Hero = () => {
 
 
   return (
-    <div id="home_section" className='md:min-h-screen'>
+    <div id="home_section" className='md:min-h-screen relative'>
       {/* <Parallax speed={-20}>
         <img src={heroBg} className='scale-[100%] w-full absolute top-[-200px] left-0 md:max-h-[800px] md:min-h-[100vh] bg-cover ' />
       </Parallax> */}
 
       <Parallax speed={-20}>
-        <div className='relative'>
-          <img src={heroBg} className='absolute top-[-200px] left-0 h-full w-full min-h-[80vh] md:min-h-[100vh] object-left md:object-center object-cover' />
-          <div className='hidden md:block absolute top-[700px] lg:top-[520px] bg-gradient-to-b from-[#071470] to-[#162178]/70 h-20 w-full z-[100]'/>
+        <div className='relative h-full w-full border border-white'>
+          <img src={heroBg} className='absolute top-[-200px] left-0 h-full w-full min-h-[80vh] md:min-h-[110vh] object-left md:object-center object' />
         </div>
       </Parallax>
       
@@ -108,7 +107,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
+      
       <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='mt-32 z-100'>
         <div className='flex flex-col text-center w-full'>
           <p className='text-[20px] font-bienvenue leading-6 text-white uppercase'>Powered by</p>
