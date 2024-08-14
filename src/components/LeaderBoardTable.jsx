@@ -19,12 +19,12 @@ const LeaderboardTable = ({data}) => {
         <tbody className='border border-table_border_blue w-full'>
             {data?.map((row, index) => (
               <tr key={index} className="text-center text-[10px] md:text-[14px] font-medium border-t border-table_border_blue">
-                <td className="py-4 px-2 font-normal border-l border-table_border_blue">{`#${row.rank}`}</td>
-                <td className="py-4 md:px-10 px-1 flex items-center justify-center border-l border-table_border_blue font-inter ">
+                <td className="h-[56px] w-[60px] md:w-[100px] lg:w-[157px] font-normal border-l border-table_border_blue">{`#${row.rank}`}</td>
+                <td className="h-[56px] w-[120px] md:w-[200px] lg:w-[425px] flex items-center justify-center border-l border-table_border_blue font-inter ">
                   {row.discord_id}
                 </td>
-                <td className="py-4 lg:px-4 px-6 border-l border-table_border_blue font-inter">{row.tier}</td>
-                <td className="py-4 lg:px-12 px-6 border-l border-table_border_blue font-inter">{row.points}</td>
+                <td className="h-[56px] w-[110px] md:w-[180px] lg:w-[302px] border-l border-table_border_blue font-inter">{row.tier}</td>
+                <td className="h-[56px] w-[110px] md:w-[180px] lg:w-[302px] border-l border-table_border_blue font-inter">{row.points}</td>
               </tr>
             ))}
         </tbody>
