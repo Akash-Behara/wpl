@@ -162,14 +162,14 @@ const About = () => {
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="700" className="my-16">
+                
                 <FancyButton
-                    src_img={joinSubtractPng}
-                    hover_src_img={joinSubtractHoverPng}
-                    img_size_classes='w-[208px] md:w-[318px] h-[36.5px] md:h-[65px]'
-                    className='font-gridular text-[#10105E] text-[14px] md:text-[24px]'
-                    btn_txt='Join the Mission'
-                    alt_txt='join mission button'
-                    isArrow={true}
+                    src_img={startEarnPng}
+                    hover_src_img={startEarnHoverPng}
+                    img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
+                    className='font-gridular text-white text-[14px] md:text-[24px]'
+                    btn_txt='Learn more'
+                    alt_txt='joint the pack button'
                 />
             </div>
         </div>
