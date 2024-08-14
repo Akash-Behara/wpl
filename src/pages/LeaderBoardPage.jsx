@@ -37,7 +37,7 @@ const LeaderBoardPage = () => {
       <div className='flex flex-col justify-center items-center'>
         <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>WPL LEADERBOARD</div>
         <div className=''>
-          <div className='min-h-[560px] border border-table_border_blue'>
+          <div className='min-h-[560px] bg-[#0F1970] border border-table_border_blue'>
             <LeaderboardTable data={currentItems}/>
           </div>
           <div className='flex items-center justify-between w-full px-6 mb-10 mt-4'>
