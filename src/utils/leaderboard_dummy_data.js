@@ -192,3 +192,1242 @@ export const about_table_data = [
     {tier: 'Fenrir', points: 25740, reward: '$8,253'},
     {tier: 'Dire Wolf', points: 30030, reward: '$8,941'},
 ]
+
+
+export const tiers_points_data = [
+    {rank: 1, tier: 'Puppy', cumulative_points: 330, reward: '$688'},
+    {rank: 2, tier: 'Red Wolf', cumulative_points: 990, reward: '$1,376'},
+    {rank: 3, tier: 'Arctic Wolf', cumulative_points: 1980, reward: '$2,063'},
+    {rank: 4, tier: 'Gray Wolf', cumulative_points: 3300, reward: '$2,751'},
+    {rank: 5, tier: 'Celestial Wolf', cumulative_points: 4950, reward: '$3,439'},
+    {rank: 6, tier: 'Fire Wolf', cumulative_points: 6930, reward: '$4,127'},
+    {rank: 7, tier: 'Shadow Wolf', cumulative_points: 9240, reward: '$4,815'},
+    {rank: 8, tier: 'Ice Wolf', cumulative_points: 11880, reward: '$5,502'},
+    {rank: 9, tier: 'Thunder Wolf', cumulative_points: 14850, reward: '$6,190'},
+    {rank: 10, tier: 'Warg', cumulative_points: 18150, reward: '$6,878'},
+    {rank: 11, tier: 'Werewolf', cumulative_points: 21780, reward: '$7,566'},
+    {rank: 12, tier: 'Fenrir', cumulative_points: 25740, reward: '$8,253'},
+    {rank: 13, tier: 'Dire Wolf', cumulative_points: 30030, reward: '$8,941'},
+]
+
+export const leaderboardJune = [
+    
+        {
+          "Discord Identifier": "dj1nnn.",
+          "Cumulative Points": 2467,
+          "Tier": "Red Wolf",
+          "Tier Change": "Arctic Wolf 1980"
+        },
+        {
+          "Discord Identifier": "jlji",
+          "Cumulative Points": 1799,
+          "Tier": "Red Wolf",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "fabiocatalao",
+          "Cumulative Points": 1463,
+          "Tier": "Puppy",
+          "Tier Change": "Red Wolf 990"
+        },
+        {
+          "Discord Identifier": "vladstarkdegenz",
+          "Cumulative Points": 1437,
+          "Tier": "Puppy",
+          "Tier Change": "Red Wolf 990"
+        },
+        {
+          "Discord Identifier": "0xredman",
+          "Cumulative Points": 1412,
+          "Tier": "Puppy",
+          "Tier Change": "Red Wolf 990"
+        },
+        {
+          "Discord Identifier": "samrendra.singh",
+          "Cumulative Points": 1269,
+          "Tier": "Puppy",
+          "Tier Change": "Red Wolf 990"
+        },
+        {
+          "Discord Identifier": "starkythedoggo",
+          "Cumulative Points": 1259,
+          "Tier": "Puppy",
+          "Tier Change": "Red Wolf 990"
+        },
+        {
+          "Discord Identifier": "nurstar",
+          "Cumulative Points": 1257,
+          "Tier": "Red Wolf",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "ollie.eth",
+          "Cumulative Points": 1042,
+          "Tier": "Puppy",
+          "Tier Change": "Red Wolf 990"
+        },
+        {
+          "Discord Identifier": "femiyoghurt",
+          "Cumulative Points": 1026,
+          "Tier": "Puppy",
+          "Tier Change": "Red Wolf 990"
+        },
+        {
+          "Discord Identifier": "xerantia",
+          "Cumulative Points": 946,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "gtf.eth_78846",
+          "Cumulative Points": 918,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "thann199",
+          "Cumulative Points": 891,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "buremo",
+          "Cumulative Points": 862,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": ".bole007",
+          "Cumulative Points": 859,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "hdai58",
+          "Cumulative Points": 854,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "megumii.eth",
+          "Cumulative Points": 851,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "calcutator",
+          "Cumulative Points": 846,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "paulemmanuelng",
+          "Cumulative Points": 821,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "lordcumberlord",
+          "Cumulative Points": 776,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "muguika",
+          "Cumulative Points": 720,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "0xandee",
+          "Cumulative Points": 699,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "Karub.btc",
+          "Cumulative Points": 656,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "60*06",
+          "Cumulative Points": 639,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "cheelax",
+          "Cumulative Points": 605,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "Boruto__",
+          "Cumulative Points": 600,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "nadai02010",
+          "Cumulative Points": 596,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "meison7554",
+          "Cumulative Points": 592,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": ".sdav",
+          "Cumulative Points": 590,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "avader*",
+          "Cumulative Points": 586,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "crypto.stark",
+          "Cumulative Points": 569,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "Bert of B",
+          "Cumulative Points": 559,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "ihor0732",
+          "Cumulative Points": 523,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "paskon4ick",
+          "Cumulative Points": 508,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "hamd1st",
+          "Cumulative Points": 503,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "shelleymae",
+          "Cumulative Points": 474,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "Stark Hub Brasil",
+          "Cumulative Points": 436,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "starknetes",
+          "Cumulative Points": 436,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "apixtwts",
+          "Cumulative Points": 427,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "gogibear",
+          "Cumulative Points": 422,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "yoyo.stark",
+          "Cumulative Points": 419,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "juno0601",
+          "Cumulative Points": 418,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "! Layer2ID",
+          "Cumulative Points": 415,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "phil26",
+          "Cumulative Points": 405,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "gaetbout",
+          "Cumulative Points": 400,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "gabecartridge",
+          "Cumulative Points": 394,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "cryptoricot.eth",
+          "Cumulative Points": 393,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "danielbeja",
+          "Cumulative Points": 375,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "rektor",
+          "Cumulative Points": 372,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "oshioke_salaki",
+          "Cumulative Points": 371,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "evans007",
+          "Cumulative Points": 360,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "angelo.bas",
+          "Cumulative Points": 358,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "karlostoteles",
+          "Cumulative Points": 355,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "louthing",
+          "Cumulative Points": 347,
+          "Tier": "Puppy",
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "hova2418",
+          "Cumulative Points": 341,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "0xkopil",
+          "Cumulative Points": 335,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "nejc",
+          "Cumulative Points": 332,
+          "Tier": "Puppy",
+          "Tier Change": "330"
+        },
+        {
+          "Discord Identifier": "nggax100",
+          "Cumulative Points": 318,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "2cosmonautes",
+          "Cumulative Points": 316,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "lordsquiddy",
+          "Cumulative Points": 311,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "handlerr",
+          "Cumulative Points": 302,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "maxv001",
+          "Cumulative Points": 298,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "orgazmio",
+          "Cumulative Points": 279,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "im*dave*",
+          "Cumulative Points": 260,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "hugo0x18",
+          "Cumulative Points": 259,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "kkai_kaydd",
+          "Cumulative Points": 257,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "ocheesther",
+          "Cumulative Points": 249,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "Faith M.",
+          "Cumulative Points": 248,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "senku_stark",
+          "Cumulative Points": 240,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "mazelecta",
+          "Cumulative Points": 234,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "raizo007.",
+          "Cumulative Points": 227,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "defisaintkromcontributor",
+          "Cumulative Points": 224,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "web3gurung",
+          "Cumulative Points": 224,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "Calebux",
+          "Cumulative Points": 222,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "tashabullishovna",
+          "Cumulative Points": 215,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "richard120",
+          "Cumulative Points": 214,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "crypto_guy",
+          "Cumulative Points": 202,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "tekkac",
+          "Cumulative Points": 200,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "julia457",
+          "Cumulative Points": 200,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "soycripto",
+          "Cumulative Points": 194,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "agrozold",
+          "Cumulative Points": 182,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "alex_pashevich",
+          "Cumulative Points": 181,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "ainullindale",
+          "Cumulative Points": 181,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "hakresearch",
+          "Cumulative Points": 179,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "vickish11",
+          "Cumulative Points": 162,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "syl_fel",
+          "Cumulative Points": 150,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "leogravina",
+          "Cumulative Points": 147,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "rakkiotoko",
+          "Cumulative Points": 146,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "aleksander100",
+          "Cumulative Points": 136,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "immanuel_olivia",
+          "Cumulative Points": 131,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "recipromancer",
+          "Cumulative Points": 117,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "maxlion_astro",
+          "Cumulative Points": 116,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "danydmago",
+          "Cumulative Points": 113,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "leoyoung",
+          "Cumulative Points": 112,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "jimmy2jacket",
+          "Cumulative Points": 110,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "coingeener",
+          "Cumulative Points": 110,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "rroydd",
+          "Cumulative Points": 109,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "antoine_argent.xyz",
+          "Cumulative Points": 109,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "behtin",
+          "Cumulative Points": 108,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "bossprince",
+          "Cumulative Points": 96,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "0xasten",
+          "Cumulative Points": 93,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "jejom43",
+          "Cumulative Points": 89,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "arturobx",
+          "Cumulative Points": 85,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "tomaszcrypto7",
+          "Cumulative Points": 85,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "kechei_",
+          "Cumulative Points": 83,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "dianeu53",
+          "Cumulative Points": 81,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "nick_you_",
+          "Cumulative Points": 73,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "milyu",
+          "Cumulative Points": 72,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "onbodem",
+          "Cumulative Points": 69,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "katsuyusama",
+          "Cumulative Points": 62,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "ryand0423",
+          "Cumulative Points": 61,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "kellou4491",
+          "Cumulative Points": 59,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "0xxeno",
+          "Cumulative Points": 56,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "kayzee1247",
+          "Cumulative Points": 54,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "jaimes4926",
+          "Cumulative Points": 52,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "hessish",
+          "Cumulative Points": 51,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "manoah1",
+          "Cumulative Points": 50,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "IamEnergyI",
+          "Cumulative Points": 49,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "kakoozavian.",
+          "Cumulative Points": 49,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "saurabhshetty",
+          "Cumulative Points": 47,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "deliamayami",
+          "Cumulative Points": 47,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "delta3a",
+          "Cumulative Points": 47,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "naveenzkx",
+          "Cumulative Points": 45,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "yura4654",
+          "Cumulative Points": 44,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "khairallah",
+          "Cumulative Points": 44,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "snowliii",
+          "Cumulative Points": 43,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "maksym5868",
+          "Cumulative Points": 41,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "osguridascripto",
+          "Cumulative Points": 41,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "jonaso55",
+          "Cumulative Points": 41,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "scriptmoney",
+          "Cumulative Points": 38,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "mr.karahanli_emre_",
+          "Cumulative Points": 38,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "mickeymimi",
+          "Cumulative Points": 37,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "kawaka_a",
+          "Cumulative Points": 36,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "jc3910",
+          "Cumulative Points": 35,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "0xgiwook",
+          "Cumulative Points": 35,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "no record",
+          "Cumulative Points": 34,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "jason.ball",
+          "Cumulative Points": 33,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "julio4",
+          "Cumulative Points": 32,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "micka_18",
+          "Cumulative Points": 31,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "mservais",
+          "Cumulative Points": 31,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "0xteejey",
+          "Cumulative Points": 30,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "satyambnsal",
+          "Cumulative Points": 29,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "mataleone",
+          "Cumulative Points": 28,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "hope.gg",
+          "Cumulative Points": 27,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "Anıl",
+          "Cumulative Points": 26,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "mrbabs",
+          "Cumulative Points": 23,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "amarachiugwu",
+          "Cumulative Points": 20,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "moqiao",
+          "Cumulative Points": 20,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "Reg_Horace",
+          "Cumulative Points": 20,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "pyta4ok",
+          "Cumulative Points": 20,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "julierb06",
+          "Cumulative Points": 18,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "HOSSEIN",
+          "Cumulative Points": 18,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "The_Elder#1192",
+          "Cumulative Points": 18,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "maddmaxg",
+          "Cumulative Points": 18,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "kroko_bams",
+          "Cumulative Points": 17,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "syphilis6688",
+          "Cumulative Points": 15,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "iwantanode",
+          "Cumulative Points": 15,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "0xweb3dev",
+          "Cumulative Points": 14,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "edik_fnd",
+          "Cumulative Points": 14,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "multicat",
+          "Cumulative Points": 13,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "only1temmy.",
+          "Cumulative Points": 12,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "0xshora",
+          "Cumulative Points": 12,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "khemmie_ray",
+          "Cumulative Points": 12,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "liamthedawn",
+          "Cumulative Points": 11,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "bodik4612",
+          "Cumulative Points": 10,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "heikel",
+          "Cumulative Points": 9,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "provablemat",
+          "Cumulative Points": 9,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "alexrushmere",
+          "Cumulative Points": 9,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "nandyba",
+          "Cumulative Points": 8,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "emmaglorypraise",
+          "Cumulative Points": 8,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "juliencoppola",
+          "Cumulative Points": 7,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "0xnestor",
+          "Cumulative Points": 6,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "wong_ssh",
+          "Cumulative Points": 6,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "flavinho0726",
+          "Cumulative Points": 6,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "gnarly_narwhal",
+          "Cumulative Points": 6,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "metaverseon",
+          "Cumulative Points": 6,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "tradesgiving",
+          "Cumulative Points": 5,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "tomynocker",
+          "Cumulative Points": 5,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "web3ocean",
+          "Cumulative Points": 5,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "simpletox",
+          "Cumulative Points": 5,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "milka69",
+          "Cumulative Points": 4,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "aak0x",
+          "Cumulative Points": 4,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "hashvalue",
+          "Cumulative Points": 4,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "scissors_fb",
+          "Cumulative Points": 3,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "alphab1",
+          "Cumulative Points": 2,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "ViktorDefi",
+          "Cumulative Points": 2,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "DeFiTeddy2020",
+          "Cumulative Points": 2,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "collins6646",
+          "Cumulative Points": 2,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "0xzenitsu",
+          "Cumulative Points": 2,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "nilaaa6501",
+          "Cumulative Points": 2,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "bleezysmart",
+          "Cumulative Points": 2,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "laoyang33",
+          "Cumulative Points": 2,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "ortegascrypto",
+          "Cumulative Points": 2,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "darklord2015",
+          "Cumulative Points": 0,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+          "Discord Identifier": "remedcu",
+          "Cumulative Points": 0,
+          "Tier": null,
+          "Tier Change": null
+        },
+        {
+            "Discord Identifier": "shuaiguo",
+            "Cumulative Points": 0,
+            "Tier": null,
+            "Tier Change": null
+        },
+        {
+            "Discord Identifier": "0xEvix",
+            "Cumulative Points": 0,
+            "Tier": null,
+            "Tier Change": null
+        },
+        {
+            "Discord Identifier": "alphainsiders",
+            "Cumulative Points": 0,
+            "Tier": null,
+            "Tier Change": null
+        },
+        {
+            "Discord Identifier": "artem_mighty",
+            "Cumulative Points": 0,
+            "Tier": null,
+            "Tier Change": null
+        },
+        {
+            "Discord Identifier": "kmadorin",
+            "Cumulative Points": 0,
+            "Tier": null,
+            "Tier Change": null
+        },
+        {
+            "Discord Identifier": "Fortizo#0",
+            "Cumulative Points": 0,
+            "Tier": null,
+            "Tier Change": null
+        },
+        {
+            "Discord Identifier": "tufanoglu",
+            "Cumulative Points": 0,
+            "Tier": null,
+            "Tier Change": null
+        },
+        {
+            "Discord Identifier": "vitalii9202",
+            "Cumulative Points": 0,
+            "Tier": null,
+            "Tier Change": null
+        },
+]
