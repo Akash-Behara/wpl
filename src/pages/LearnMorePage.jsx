@@ -63,7 +63,7 @@ const LearnMorePage = () => {
         {/* Key Features */}
         <div className='flex flex-col mb-32 mx-5 lg:mx-[130px]'>
             <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Key Features</div>
-            <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className="grid grid-cols-12 gap-6 mt-16 xl:mt-0">
+            <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className="grid grid-cols-12 gap-6 mt-0 md:mt-16 xl:mt-0">
                 {keyFeatureData.map(({title, description}, index) => (
                     <KF_Card key={index} title={title} description={description} index={index}/>
                 ))}

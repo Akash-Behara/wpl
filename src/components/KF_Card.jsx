@@ -21,9 +21,9 @@ const KF_Card = ({ title, description, index }) => {
             alt="Key Feature Card"
             className='opacity-30 w-[571px] h-[209px]' 
         />
-        <div className='absolute top-3 px-10 pt-3'>
-            <p className='text-[20px] leading-[24px] py-2 text-white font-gridular text-star font-normalt'>{title}</p>
-            <p className='text-[#CCCCF8] text-[16px] leading-[22px] font-inter text-start font-light'>{description}</p>
+        <div className='absolute top-0 lg:top-3 px-10 pt-3'>
+            <p className='text-[20px] leading-[24px] py-2 text-white font-gridular text-start font-normal max-w-[521px]'>{title}</p>
+            <p className='text-[#CCCCF8] text-[13px] lg:text-[16px] leading-[22px] font-inter text-start font-light max-w-[521px]'>{description}</p>
         </div>
     </div>
         
