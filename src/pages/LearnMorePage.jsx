@@ -48,10 +48,10 @@ const keyFeatureData = [
 
 const LearnMorePage = () => {
   return (
-    <div className='pt-52 flex flex-col mx-5 lg:mx-[130px] mb-56 overflow-x-hidden'>
+    <div className='pt-52 flex flex-col  mb-56 overflow-hidden'>
 
         {/* Intro */}
-        <div className='flex flex-col mb-32'>
+        <div className='flex flex-col mb-32 mx-5 lg:mx-[130px]'>
             <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Starkware wolfpack league</div>
             <div className='text-[16px] md:text-[20px] leading-[23.4px] font-bienvenue text-white opacity-[82%] uppercase mb-5'>the Starknet Community Engagement Program </div>
             <div className='max-w-[680px]'>
@@ -61,7 +61,7 @@ const LearnMorePage = () => {
         </div>
 
         {/* Key Features */}
-        <div className='flex flex-col mb-32'>
+        <div className='flex flex-col mb-32 mx-5 lg:mx-[130px]'>
             <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Key Features</div>
             <div className="grid grid-cols-12 gap-6 mt-16 xl:mt-0">
                 {keyFeatureData.map(({title, description}, index) => (
@@ -71,21 +71,21 @@ const LearnMorePage = () => {
         </div>
 
         {/* FAQ */}
-        <div className="flex flex-col mb-12">
+        <div className="flex flex-col mb-12 mx-5 lg:mx-[130px]">
             <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>StarkWare Wolf Pack League FAQ</div>
             <LM_Faq />
         </div>
 
         {/* WPL Tiers */}
-        <div className="flex flex-col mb-32">
+        <div className="flex flex-col mb-32 mx-5 lg:mx-[130px]">
             <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-4'>The WPL Tiers</div>
             <LM_Marquee />
         </div>
             
 
         {/* TIPS AND POITNS */}
-        <div className='mb-32'>
-            <div className='text-center md:text-start'>
+        <div className='mb-32 mx-5 lg:mx-[130px]'>
+            <div className='text-start'>
                 <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Tiers & Points</div>
                 <div className='max-w-[680px] gap-6 flex flex-col'>
                     <p className='font-[300] text-[#CCCCF8] leading-6'>
@@ -106,8 +106,8 @@ const LearnMorePage = () => {
         </div>
 
         {/* LEADERBOARD JUNE */}
-        <div>
-            <div className='text-center md:text-start'>
+        <div className=' mx-5 lg:mx-[130px]'>
+            <div className='text-start'>
                 <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Leaderboard end of June</div>
                 <div className='gap-6 flex flex-col'>
                     <p className='font-[300] text-[#CCCCF8] leading-[22px]'>
