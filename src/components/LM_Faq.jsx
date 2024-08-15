@@ -89,6 +89,7 @@ const faq = [
         title: 'Is there a channel for participants to appeal if they feel points have been allocated incorrectly?',
         content: 'All communication related to the program will take place in the new role-gated WPL channel on [Starknet Discord](https://starknet.io discord).'
     }
+    
 ]
 
 const LM_Faq = () => {
