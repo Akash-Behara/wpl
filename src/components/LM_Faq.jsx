@@ -97,7 +97,7 @@ const LM_Faq = () => {
         <div className='w-full mt-6'>
             <Accordion type="single" collapsible>
                 {faq.map((item, index) => (
-                    <AccordionItem key={index} value={`item-${index}`} className="border-[#E4E7EC1A] mb-4 font-inter">
+                    <AccordionItem key={index} value={`item-${index}`} data-aos="fade-up" data-aos-delay={`${(400) + index}`} data-aos-duration="700" className="border-[#E4E7EC1A] mb-4 font-inter">
                         <AccordionTrigger className="text-white text-left text-[14px] md:text-[18px] leading-[28px] font-medium hover:no-underline">{item.title}</AccordionTrigger>
                         <AccordionContent className="text-white/80 text-[12px] md:text-[16px] leading-[24px] w-[97%]">
                             {item.content}

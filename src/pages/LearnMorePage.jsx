@@ -52,9 +52,9 @@ const LearnMorePage = () => {
 
         {/* Intro */}
         <div className='flex flex-col mb-32 mx-5 lg:mx-[130px]'>
-            <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Starkware wolfpack league</div>
-            <div className='text-[16px] md:text-[20px] leading-[23.4px] font-bienvenue text-white opacity-[82%] uppercase mb-5'>the Starknet Community Engagement Program </div>
-            <div className='max-w-[680px]'>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Starkware wolfpack league</div>
+            <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="700" className='text-[16px] md:text-[20px] leading-[23.4px] font-bienvenue text-white opacity-[82%] uppercase mb-5'>the Starknet Community Engagement Program </div>
+            <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="700" className='max-w-[680px]'>
                 <div className='text-[14px] md:text-[16px] leading-[24px] font-inter text-[#CCCCF8] mb-4'>A StarkWare initiative to boost innovation and growth in the Starknet ecosystem is coming out of the woods, backed by a whopping 5 million STRK budget for the first phase!</div>
                 <div className='text-[14px] md:text-[16px] leading-[24px] font-inter text-[#CCCCF8]'>The WPL Community Engagement Program is an initiative designed to cultivate a thriving community of Starknet creators who actively contribute and engage across various platforms. By identifying and rewarding impactful creators and contributors, the program aims to boost valuable education and innovation within the Starknet ecosystem.</div>
             </div>
@@ -62,23 +62,23 @@ const LearnMorePage = () => {
 
         {/* Key Features */}
         <div className='flex flex-col mb-32 mx-5 lg:mx-[130px]'>
-            <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Key Features</div>
-            <div className="grid grid-cols-12 gap-6 mt-16 xl:mt-0">
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Key Features</div>
+            <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className="grid grid-cols-12 gap-6 mt-16 xl:mt-0">
                 {keyFeatureData.map(({title, description}, index) => (
-                    <KF_Card key={index} title={title} description={description}/>
+                    <KF_Card key={index} title={title} description={description} index={index}/>
                 ))}
             </div>
         </div>
 
         {/* FAQ */}
         <div className="flex flex-col mb-12 mx-5 lg:mx-[130px]">
-            <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>StarkWare Wolf Pack League FAQ</div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>StarkWare Wolf Pack League FAQ</div>
             <LM_Faq />
         </div>
 
         {/* WPL Tiers */}
         <div className="flex flex-col mb-32 mx-5 lg:mx-[130px]">
-            <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-4'>The WPL Tiers</div>
+            <div  data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-4'>The WPL Tiers</div>
             <LM_Marquee />
         </div>
             
@@ -86,8 +86,8 @@ const LearnMorePage = () => {
         {/* TIPS AND POITNS */}
         <div className='mb-32 mx-5 lg:mx-[130px]'>
             <div className='text-start'>
-                <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Tiers & Points</div>
-                <div className='max-w-[680px] gap-6 flex flex-col'>
+                <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Tiers & Points</div>
+                <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className='max-w-[680px] gap-6 flex flex-col'>
                     <p className='font-[300] text-[#CCCCF8] leading-6'>
                         The WPL program is designed to be flexible, with point values and reward amounts potentially adjusted based on ongoing data analysis to ensure fairness and effectiveness. The number of points needed for each tier and corresponding USD rewards (paid in STRK) may change as we assess the program
                     </p>
@@ -99,7 +99,7 @@ const LearnMorePage = () => {
                     <LeaderboardTable data={tiers_points_data} pos={'justify-start'}/>
                 </div>
 
-                <div className='mt-4'>
+                <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='mt-4'>
                     <p className='text-[12px] text-[#CCCCF8]'> * Points and Rewards are subject to change</p>
                 </div>
             </div>
@@ -108,8 +108,8 @@ const LearnMorePage = () => {
         {/* LEADERBOARD JUNE */}
         <div className=' mx-5 lg:mx-[130px]'>
             <div className='text-start'>
-                <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Leaderboard end of June</div>
-                <div className='gap-6 flex flex-col'>
+                <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Leaderboard end of June</div>
+                <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className='gap-6 flex flex-col'>
                     <p className='font-[300] text-[#CCCCF8] leading-[22px]'>
                         If you've reached one or more tiers, you're eligible to claim rewards for those tiers. Register on <a href='https://app.onlydust.com/' target='_blank' className='underline'>OnlyDust</a> using your GitHub account, follow their rules, and complete KYC to receive your rewards. If you haven't reached a tier yet, keep contributing and adding value. Remember to avoid spam and pump talk at all times. 
                     </p>

@@ -132,7 +132,7 @@ const WolfCard = ({key, wolf}) => {
 
 const LM_Marquee = () => {
   return (
-    <div className='flex flex-col justify-center items-center mt-14'>
+    <div data-aos="fade-up" data-aos-delay="410" data-aos-duration="700" className='flex flex-col justify-center items-center mt-14'>
         <Marquee pauseOnHover reverse={true} className="[--duration:20s] p-0">
             {data.map((wolf) => (
                 <WolfCard key={wolf.text} wolf={wolf} />
