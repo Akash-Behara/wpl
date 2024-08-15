@@ -112,13 +112,13 @@ const WolfCard = ({key, wolf}) => {
                     </div>
                     <div className='absolute top-8 w-full text-start ps-7 pr-3'>
                         <p className='text-[11.82px] leading-[11.23px] text-[#E38070] font-bevan'>#{wolf.text}</p>
-                        <p className='text-[25.56px] leading-[24.28px] text-primary font-bienvenue'>{wolf.occ}</p>
+                        <p className='text-[22.56px] leading-[24.28px] text-primary font-bienvenue'>{wolf.occ}</p>
                     </div>
                 </div>
                 <div className='back'>
                     <img src={marqueeBackPng} alt='about card 1' className='size-full'/>
                     <div className='absolute top-6 w-full text-start ps-7 pr-3'>
-                        <p className='text-[25.56px] leading-[24.28px] text-primary font-bienvenue'>{wolf.occ}</p>
+                        <p className='text-[22.56px] leading-[24.28px] text-primary font-bienvenue'>{wolf.occ}</p>
                         <div className='border border-b-white opacity-30 my-2'></div>
                         <div className=''>
                             <p className='text-[16px] leading-[22px] font-light font-inter opacity-80'>{wolf.description}</p>

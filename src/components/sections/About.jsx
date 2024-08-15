@@ -29,7 +29,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div id="about_section" className='mx-5 md:mx-[130px] mt-32 z-[101] relative'>
+    <div id="about_section" className='mx-5 md:mx-[130px] xl:mx-[400px] mt-32 z-[101] relative'>
         <div className='flex flex-col justify-center items-center text-center'>
             <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"  className='text-primary font-gridular text-[28px] md:text-[48px] leading-[26px] md:leading-[45px] uppercase'>More About WPL</h1>
             

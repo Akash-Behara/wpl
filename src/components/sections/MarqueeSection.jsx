@@ -148,7 +148,7 @@ const WolfCard = ({key, wolf}) => {
 
 const MarqueeSection = () => {
   return (
-    <div className='md:h-screen flex flex-col justify-center items-center mt-14'>
+    <div className='flex flex-col justify-center items-center mt-14'>
         <div className='mb-16'>
             <h2 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='text-[28px] md:text-[48px] max-w-[230px] text-center md:max-w-full font-gridular text-primary uppercase'>Join the wolfpack, earn your rank!</h2>
         </div>

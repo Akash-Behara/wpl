@@ -17,7 +17,7 @@ const faq = [
 
 const Faq = () => {
   return (
-    <div id="faq_section" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='flex flex-col justify-center items-center mt-20 md:mt-0 md:min-h-[110vh] mb-20'>
+    <div id="faq_section" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className='flex flex-col justify-center items-center mt-20 md:min-h-[110vh] xl:min-h-[80vh] mb-20'>
         <div>
             <h1 className='text-pretty font-gridular text-[#FAF1B1] text-[28px] md:text-[48px] leading-[45px]'>FAQ</h1>
         </div>
