@@ -55,7 +55,7 @@ const LearnMorePage = () => {
         <div className='flex flex-col mb-32'>
             <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Starkware wolfpack league</div>
             <div className='text-[16px] md:text-[20px] leading-[23.4px] font-bienvenue text-white opacity-[82%] uppercase mb-5'>the Starknet Community Engagement Program </div>
-            <div className='w-[680px]'>
+            <div className='max-w-[680px]'>
                 <div className='text-[14px] md:text-[16px] leading-[24px] font-inter text-[#CCCCF8] mb-4'>A StarkWare initiative to boost innovation and growth in the Starknet ecosystem is coming out of the woods, backed by a whopping 5 million STRK budget for the first phase!</div>
                 <div className='text-[14px] md:text-[16px] leading-[24px] font-inter text-[#CCCCF8]'>The WPL Community Engagement Program is an initiative designed to cultivate a thriving community of Starknet creators who actively contribute and engage across various platforms. By identifying and rewarding impactful creators and contributors, the program aims to boost valuable education and innovation within the Starknet ecosystem.</div>
             </div>
@@ -85,7 +85,7 @@ const LearnMorePage = () => {
 
         {/* TIPS AND POITNS */}
         <div className='mb-32'>
-            <div>
+            <div className='text-center md:text-start'>
                 <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Tiers & Points</div>
                 <div className='max-w-[680px] gap-6 flex flex-col'>
                     <p className='font-[300] text-[#CCCCF8] leading-6'>
@@ -95,7 +95,7 @@ const LearnMorePage = () => {
                         Additionally, the program may be modified, suspended, or terminated at our discretion. Payouts will be processed through <a href='https://app.onlydust.com/' target='_blank' className='underline'>OnlyDust</a>, requiring registration and KYC with a GitHub username for eligibility. 
                     </p>
                 </div>
-                <div className='flex justify-start w-full mt-12'>
+                <div className='flex justify-center md:justify-start w-full mt-12'>
                     <LeaderboardTable data={tiers_points_data} pos={'justify-start'}/>
                 </div>
 
@@ -107,14 +107,14 @@ const LearnMorePage = () => {
 
         {/* LEADERBOARD JUNE */}
         <div>
-            <div>
+            <div className='text-center md:text-start'>
                 <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Leaderboard end of June</div>
                 <div className='gap-6 flex flex-col'>
                     <p className='font-[300] text-[#CCCCF8] leading-[22px]'>
                         If you've reached one or more tiers, you're eligible to claim rewards for those tiers. Register on <a href='https://app.onlydust.com/' target='_blank' className='underline'>OnlyDust</a> using your GitHub account, follow their rules, and complete KYC to receive your rewards. If you haven't reached a tier yet, keep contributing and adding value. Remember to avoid spam and pump talk at all times. 
                     </p>
                 </div>
-                <div className='flex justify-start w-full mt-10'>
+                <div className='flex justify-center md:justify-start w-full mt-10'>
                     <LeaderboardTable data={leaderboardJune?.slice(0, 5)} pos={'justify-start'}/>
                 </div>
                 <div id="features_section" data-aos="fade-up" data-aos-delay="560" data-aos-duration="700" className="mt-10 flex justify-center items-center w-full">
