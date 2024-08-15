@@ -9,7 +9,7 @@ const Footer = () => {
  return (
     <div className='relative overflow-x-hidden'>
       <div className='size-full overflow-hidden'>
-        <img src={footerBg} className='h-[499px] xl:h-[600px] 2xl:h-[800px] min-w-[700px] w-full bg-center' />
+        <img src={footerBg} className='h-[499px] 2xl:h-[700px] min-w-[700px] w-full bg-center' />
       </div>
       <div className='absolute top-0 left-0 size-full flex flex-col items-center z-30 p-10 pb-5'>
         <div className='flex flex-col md:flex-row justify-center md:justify-between items-center w-full h-full'>
