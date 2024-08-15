@@ -9,19 +9,20 @@ import rightArrowSvg from '../assets/svg/right-arrow.svg'
 
 const LeaderBoardPage = () => {
 
-
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(9);
+  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {   
+  useEffect(() => {
     window.scrollTo(0, 0);
+    setIsLoading(true);
     setData(leaderboard_dummy_data);
   }, []);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = data?.slice(indexOfFirstItem, indexOfLastItem);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
@@ -30,7 +31,7 @@ const LeaderBoardPage = () => {
     pageNumbers.push(i);
   }
 
-
+  if(!data || data== "") return null;
 
   return (
     <div className='pt-40 flex justify-center items-center mb-56'>
