@@ -24,6 +24,7 @@ import aboutcard2Png from '../../assets/subtract_png/aboutcard2.png'
 import startEarnPng from '../../assets/subtract_png/start_earn.png'
 import startEarnHoverPng from '../../assets/subtract_png/start_earn_hover.png'
 import { leaderboard_dummy_data } from '../../utils/leaderboard_dummy_data';
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
@@ -162,15 +163,16 @@ const About = () => {
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="700" className="my-16">
-                
-                <FancyButton
-                    src_img={startEarnPng}
-                    hover_src_img={startEarnHoverPng}
-                    img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
-                    className='font-gridular text-white text-[14px] md:text-[24px]'
-                    btn_txt='Learn more'
-                    alt_txt='joint the pack button'
-                />
+                <Link to='/learnmore'>
+                    <FancyButton
+                        src_img={startEarnPng}
+                        hover_src_img={startEarnHoverPng}
+                        img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
+                        className='font-gridular text-white text-[14px] md:text-[24px]'
+                        btn_txt='Learn more'
+                        alt_txt='joint the pack button'
+                    />
+                </Link>
             </div>
         </div>
     </div>
