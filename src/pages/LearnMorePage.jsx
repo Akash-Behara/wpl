@@ -1,8 +1,7 @@
 import React from 'react'
-import Card from '../components/Card'
 import KF_Card from '../components/KF_Card'
-import Faq from '../components/sections/Faq'
 import LM_Faq from '../components/LM_Faq'
+import LM_Marquee from '../components/LM_Marquee'
 import { leaderboardJune, tiers_points_data } from '../utils/leaderboard_dummy_data'
 import LeaderboardTable from '../components/LeaderBoardTable'
 import { Link } from 'react-router-dom'
@@ -49,7 +48,7 @@ const keyFeatureData = [
 
 const LearnMorePage = () => {
   return (
-    <div className='pt-52 flex flex-col mx-5 lg:mx-[130px] mb-56'>
+    <div className='pt-52 flex flex-col mx-5 lg:mx-[130px] mb-56 overflow-x-hidden'>
 
         {/* Intro */}
         <div className='flex flex-col mb-32'>
@@ -79,7 +78,8 @@ const LearnMorePage = () => {
 
         {/* WPL Tiers */}
         <div className="flex flex-col mb-32">
-            <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>The WPL Tiers</div>
+            <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-4'>The WPL Tiers</div>
+            <LM_Marquee />
         </div>
             
 
