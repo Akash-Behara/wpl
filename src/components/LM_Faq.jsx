@@ -93,7 +93,7 @@ const faq = [
 
 const LM_Faq = () => {
   return (
-    <div className='flex flex-col jus items-start mt-0 lg:mt-20 md:min-h-[110vh] mb-20'>
+    <div className='flex flex-col items-start  md:min-h-[110vh] mb-10'>
         <div className='w-full mt-6'>
             <Accordion type="single" collapsible>
                 {faq.map((item, index) => (
