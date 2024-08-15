@@ -1,6 +1,8 @@
 import React from 'react'
 import Card from '../components/Card'
 import KF_Card from '../components/KF_Card'
+import Faq from '../components/sections/Faq'
+import LM_Faq from '../components/LM_Faq'
 
 const keyFeatureData = [
     {
@@ -53,13 +55,24 @@ const LearnMorePage = () => {
         </div>
 
         {/* Key Features */}
-        <div className='flex flex-col'>
+        <div className='flex flex-col mb-32'>
             <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Key Features</div>
             <div className="grid grid-cols-12 gap-6 mt-16 xl:mt-0">
                 {keyFeatureData.map(({title, description}, index) => (
                     <KF_Card key={index} title={title} description={description}/>
                 ))}
             </div>
+        </div>
+
+        {/* FAQ */}
+        <div className="flex flex-col mb-12">
+            <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>StarkWare Wolf Pack League FAQ</div>
+            <LM_Faq />
+        </div>
+
+        {/* WPL Tiers */}
+        <div className="flex flex-col mb-32">
+            <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>The WPL Tiers</div>
         </div>
         
     </div>
