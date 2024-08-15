@@ -150,7 +150,7 @@ const About = () => {
                                                     </div>
                                                 </div>
                                                 <div className='text-[14px] font-light text-white'>
-                                                    {data.points} USDC
+                                                    {data.points} points
                                                 </div>
                                             </div>
                                         )}
