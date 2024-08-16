@@ -112,13 +112,13 @@ const WolfCard = ({key, wolf}) => {
                     </div>
                     <div className='absolute top-8 w-full text-start ps-7 pr-3'>
                         <p className='text-[11.82px] leading-[11.23px] text-[#E38070] font-bevan'>#{wolf.text}</p>
-                        <p className='text-[25.56px] leading-[24.28px] text-primary font-bienvenue'>{wolf.occ}</p>
+                        <p className='text-[22.56px] leading-[24.28px] text-primary font-bienvenue'>{wolf.occ}</p>
                     </div>
                 </div>
                 <div className='back'>
                     <img src={marqueeBackPng} alt='about card 1' className='size-full'/>
                     <div className='absolute top-6 w-full text-start ps-7 pr-3'>
-                        <p className='text-[25.56px] leading-[24.28px] text-primary font-bienvenue'>{wolf.occ}</p>
+                        <p className='text-[22.56px] leading-[24.28px] text-primary font-bienvenue'>{wolf.occ}</p>
                         <div className='border border-b-white opacity-30 my-2'></div>
                         <div className=''>
                             <p className='text-[16px] leading-[22px] font-light font-inter opacity-80'>{wolf.description}</p>
@@ -132,7 +132,7 @@ const WolfCard = ({key, wolf}) => {
 
 const LM_Marquee = () => {
   return (
-    <div className='flex flex-col justify-center items-center mt-14'>
+    <div data-aos="fade-up" data-aos-delay="410" data-aos-duration="700" className='flex flex-col justify-center items-center mt-14'>
         <Marquee pauseOnHover reverse={true} className="[--duration:20s] p-0">
             {data.map((wolf) => (
                 <WolfCard key={wolf.text} wolf={wolf} />

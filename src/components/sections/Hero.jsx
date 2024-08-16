@@ -49,6 +49,7 @@ const Hero = () => {
     }
   }, [rewardRef])
 
+  
 
 
   return (

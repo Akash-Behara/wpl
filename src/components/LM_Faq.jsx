@@ -89,15 +89,16 @@ const faq = [
         title: 'Is there a channel for participants to appeal if they feel points have been allocated incorrectly?',
         content: 'All communication related to the program will take place in the new role-gated WPL channel on [Starknet Discord](https://starknet.io discord).'
     }
+    
 ]
 
 const LM_Faq = () => {
   return (
-    <div className='flex flex-col jus items-start mt-20 md:mt-0 md:min-h-[110vh] mb-20'>
+    <div className='flex flex-col items-start  md:min-h-[110vh] mb-10'>
         <div className='w-full mt-6'>
             <Accordion type="single" collapsible>
                 {faq.map((item, index) => (
-                    <AccordionItem key={index} value={`item-${index}`} className="border-[#E4E7EC1A] mb-4 font-inter">
+                    <AccordionItem key={index} value={`item-${index}`} data-aos="fade-up" data-aos-delay={`${(400) + index}`} data-aos-duration="700" className="border-[#E4E7EC1A] mb-4 font-inter">
                         <AccordionTrigger className="text-white text-left text-[14px] md:text-[18px] leading-[28px] font-medium hover:no-underline">{item.title}</AccordionTrigger>
                         <AccordionContent className="text-white/80 text-[12px] md:text-[16px] leading-[24px] w-[97%]">
                             {item.content}

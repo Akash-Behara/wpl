@@ -1,14 +1,15 @@
 import React from 'react'
 
 import footerBg from '../../assets/images/footer_bg.png'
+
 import wolfLogo from '../../assets/svg/wolf_logo_footer.svg'
 
 const Footer = () => {
 
  return (
     <div className='relative overflow-x-hidden'>
-      <div className='size-full'>
-        <img src={footerBg} className='h-[499px] min-w-[600px] w-full bg-cover bg-center' />
+      <div className='size-full overflow-hidden'>
+        <img src={footerBg} className='h-[499px] 2xl:h-[700px] min-w-[700px] w-full bg-center' />
       </div>
       <div className='absolute top-0 left-0 size-full flex flex-col items-center z-30 p-10 pb-5'>
         <div className='flex flex-col md:flex-row justify-center md:justify-between items-center w-full h-full'>
@@ -18,9 +19,9 @@ const Footer = () => {
           </div>
           <div className='flex justify-end items-end text-center md:text-start gap-10 h-full max-w-fit mb-10 -translate-y-2'>
             <div className='flex flex-col gap-4 text-[12px] font-normal text-[#16237F] uppercase leading-[12px] font-bienvenue'>
-              <p className=''>Contact us</p>
-              <p className=''>Terms and conditions</p>
-              <p className=''>Privacy Policy</p>
+              <p className='cursor-pointer'>Contact us</p>
+              <p className='cursor-pointer'>Terms and conditions</p>
+              <p className='cursor-pointer'>Privacy Policy</p>
             </div>
           </div>
         </div>
