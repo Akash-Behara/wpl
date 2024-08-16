@@ -9,6 +9,7 @@ import FancyButton from '../components/FancyButton'
 
 import startEarnPng from '../assets/subtract_png/start_earn.png'
 import startEarnHoverPng from '../assets/subtract_png/start_earn_hover.png'
+import DisableZoom from '../hooks/usePreventZoom'
 
 const keyFeatureData = [
     {
@@ -48,6 +49,8 @@ const keyFeatureData = [
 
 const LearnMorePage = () => {
   return (
+    <>
+    <DisableZoom />
     <div className='pt-52 flex flex-col  mb-56 overflow-hidden'>
 
         {/* Intro */}
@@ -133,6 +136,7 @@ const LearnMorePage = () => {
         </div>
         
     </div>
+    </>
   )
 }
 

@@ -7,16 +7,15 @@ import Features from '../components/sections/Features'
 import Footer from '../components/sections/Footer'
 import MarqueeSection from '../components/sections/MarqueeSection'
 import usePreventZoom from '../hooks/usePreventZoom'
+import DisableZoom from '../hooks/usePreventZoom'
 
 
 
 const LandingPage = () => {
 
-  usePreventZoom()
-
-  
   return (
     <div className='bg-[#16237f] size-full overflow-y-hidden overflow-x-hidden'>
+      <DisableZoom />
       <Hero />
       <About />
       <Leaderboard />
