@@ -19,7 +19,7 @@ const KF_Card = ({ title, description, index }) => {
         <img 
             src={isHovered ? card_subtract_hover : card_subtract } 
             alt="Key Feature Card"
-            className='opacity-30 w-[571px] h-[209px]' 
+            className='opacity-30 w-[571px] xl:w-[95%] h-[209px]' 
         />
         <div className='absolute top-0 lg:top-3 px-10 pt-3'>
             <p className='text-[20px] leading-[24px] py-2 text-white font-gridular text-start font-normal max-w-[521px]'>{title}</p>
