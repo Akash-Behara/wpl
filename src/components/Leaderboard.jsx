@@ -29,7 +29,6 @@ const Leaderboard = () => {
         getData();
     }, []);
 
-
   	return (
 		<div id="leaderboard_section" className='flex flex-col items-center justify-center mx-5 md:mx-3'>
 

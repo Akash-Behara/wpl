@@ -17,8 +17,6 @@ const LeaderboardTable = ({data, pos}) => {
     });
     return widths;
   }, [headerColumns]);
-
-  console.log('data', data);
   
   return (
     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className={`flex items-center ${pos ? pos : 'justify-center'}`}>
