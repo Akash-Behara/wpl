@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import LeaderboardTable from '../components/LeaderBoardTable'
 
 import {leaderboard_dummy_data} from '../utils/leaderboard_dummy_data'
@@ -10,16 +10,25 @@ import DisableZoom from '../hooks/usePreventZoom'
 
 const LeaderBoardPage = () => {
 
+  const tableRef = useRef(null);
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(9);
   const [isLoading, setIsLoading] = useState(true);
+  const [tableHeight, setTableHeight] = useState(0);
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
     setIsLoading(true);
     setData(leaderboard_dummy_data);
   }, []);
+
+  useEffect(() => {
+    if(tableRef?.current) {
+      setTableHeight(tableRef.current.offsetHeight);
+    }
+  }, [tableRef?.current, tableRef?.current?.offsetHeight]);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -41,7 +50,7 @@ const LeaderBoardPage = () => {
         <div className='flex flex-col justify-center items-center'>
           <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>WPL LEADERBOARD</div>
           <div className=''>
-            <div className='min-h-[560px] bg-[#0F1970] border border-table_border_blue'>
+            <div data-aos="fade-up" data-aos-delay="900" data-aos-duration="700" ref={tableRef} className={`min-h-[544px] bg-[#0F1970] border border-table_border_blue`} style={{minHeight: tableHeight + "px"}}>
               <LeaderboardTable data={currentItems}/>
             </div>
             <div className='flex items-center justify-between w-full px-6 mb-10 mt-4'>
