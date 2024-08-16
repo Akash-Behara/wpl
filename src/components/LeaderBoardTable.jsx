@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 
-
 const LeaderboardTable = ({data, pos}) => {
 
   const headerColumns = Object?.keys(data[0]);
