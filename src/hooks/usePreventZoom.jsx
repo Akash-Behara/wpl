@@ -1,36 +1,29 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 
-function usePreventZoom(scrollCheck = true, keyboardCheck = true) {
-    useEffect(() => {
-      const handleKeydown = (e) => {
-        if (
-          keyboardCheck &&
-          e.ctrlKey &&
-          (e.keyCode == "61" ||
-            e.keyCode == "107" ||
-            e.keyCode == "173" ||
-            e.keyCode == "109" ||
-            e.keyCode == "187" ||
-            e.keyCode == "189")
-        ) {
-          e.preventDefault();
-        }
-      };
-  
-      const handleWheel = (e) => {
-        if (scrollCheck && e.ctrlKey) {
-          e.preventDefault();
-        }
-      };
-  
-      document.addEventListener("keydown", handleKeydown);
-      document.addEventListener("wheel", handleWheel, { passive: false });
-  
-      return () => {
-        document.removeEventListener("keydown", handleKeydown);
-        document.removeEventListener("wheel", handleWheel);
-      };
-    }, [scrollCheck, keyboardCheck]);
-  }
+function DisableZoom() {
+  useEffect(() => {
+    const handleWheel = (e) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+      }
+    };
 
-export default usePreventZoom
+    const handleKeyDown = (e) => {
+      if ((e.ctrlKey || e.metaKey) && (e.key === '=' || e.key === '-' || e.key === '0')) {
+        e.preventDefault();
+      }
+    };
+
+    window.addEventListener('wheel', handleWheel, { passive: false });
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('wheel', handleWheel);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
+  return null;
+}
+
+export default DisableZoom;
