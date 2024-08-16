@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import LeaderboardTable from '../components/LeaderBoardTable'
 
-import {leaderboard_dummy_data} from '../utils/leaderboard_dummy_data'
-
 import btnPng from '../assets/subtract_png/leaderboard_btn.png'
 import leftArrowSvg from '../assets/svg/left-arrow.svg'
 import rightArrowSvg from '../assets/svg/right-arrow.svg'
+import axios from 'axios'
 
 const LeaderBoardPage = () => {
 
@@ -14,10 +13,24 @@ const LeaderBoardPage = () => {
   const [itemsPerPage] = useState(9);
   const [isLoading, setIsLoading] = useState(true);
 
+  const API_URI = import.meta.env.VITE_SPREADSHEET_API_URL
+  const token = import.meta.env.VITE_TOKEN
+  const headers = { 'Authorization': `Bearer ${token}`}
+
   useEffect(() => {
     window.scrollTo(0, 0);
     setIsLoading(true);
-    setData(leaderboard_dummy_data);
+    const getData = async () => {
+      const response = (await axios({
+        method: 'GET',
+        url: API_URI,
+        headers: headers
+      })).data;
+      response.shift();
+      setData(response);
+      setIsLoading(false);
+    }
+    getData();
   }, []);
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -39,7 +52,9 @@ const LeaderBoardPage = () => {
         <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>WPL LEADERBOARD</div>
         <div className=''>
           <div className='min-h-[560px] bg-[#0F1970] border border-table_border_blue'>
-            <LeaderboardTable data={currentItems}/>
+            {!isLoading && 
+              <LeaderboardTable data={currentItems}/>
+            }
           </div>
           <div className='flex items-center justify-between w-full px-6 mb-10 mt-4'>
             <div className="text-white font-gridular text-[14px] uppercase">

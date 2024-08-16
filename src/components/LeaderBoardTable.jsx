@@ -1,5 +1,3 @@
-
-
 const LeaderboardTable = ({data, pos}) => {
 
   const headerColumns = Object?.keys(data[0]);
