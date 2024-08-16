@@ -55,21 +55,27 @@ const LeaderBoardPage = () => {
     pageNumbers.push(i);
   }
 
-  if(!data || data== "") return null;
+
 
   return (
     <>
       <DisableZoom />
-      <div className='pt-40 flex justify-center items-center mb-56'>
+      <div className='pt-40 flex justify-center items-center mb-56 min-h-screen'>
         <div className='flex flex-col justify-center items-center'>
           <div className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>WPL LEADERBOARD</div>
           <div className=''>
-            <div data-aos="fade-up" data-aos-delay="900" data-aos-duration="700" ref={tableRef} className={`min-h-[544px] bg-[#0F1970] border border-table_border_blue`} style={{minHeight: tableHeight + "px"}}>
-              {!isLoading && 
+            <div ref={tableRef} className={`min-h-[544px] bg-[#0F1970] border border-table_border_blue`} style={{minHeight: tableHeight + "px"}}>
+              {isLoading ? <div className='min-h-[544px] w-full lg:min-w-[1185px] flex justify-center items-center'>
+                <div class='flex space-x-2 justify-center items-center size-full'>
+                  <div class='h-4 w-4 bg-[#FAF1B1] rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+                  <div class='h-4 w-4 bg-[#FAF1B1] rounded-full animate-bounce [animation-delay:-0.15s]'></div>
+                  <div class='h-4 w-4 bg-[#FAF1B1] rounded-full animate-bounce'></div>
+                </div>
+              </div> :
                 <LeaderboardTable data={currentItems}/>
               }
             </div>
-            <div className='flex items-center justify-between w-full px-6 mb-10 mt-4'>
+            {<div className='flex items-center justify-between w-full px-6 mb-10 mt-4'>
               <div className="text-white font-gridular text-[14px] uppercase">
                 {Math.min(indexOfLastItem, data.length)} of {data.length} members
               </div>
@@ -102,7 +108,7 @@ const LeaderBoardPage = () => {
                   <img src={leftArrowSvg} alt='' className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[50%] w-4 h-4'/>
                 </button>
               </div>
-            </div>
+            </div>}
           </div>
         </div>
       </div>
