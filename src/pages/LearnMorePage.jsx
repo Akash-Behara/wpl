@@ -51,7 +51,7 @@ const LearnMorePage = () => {
   return (
     <>
     <DisableZoom />
-    <div className='pt-52 flex flex-col  mb-56 overflow-hidden'>
+    <div className='pt-32 lg:pt-52 flex flex-col  mb-56 overflow-hidden'>
 
         {/* Intro */}
         <div className='flex flex-col mb-32 mx-5 lg:mx-[130px]'>
@@ -111,16 +111,13 @@ const LearnMorePage = () => {
         {/* LEADERBOARD JUNE */}
         <div className=' mx-5 lg:mx-[130px]'>
             <div className='text-start'>
-                <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Leaderboard end of June</div>
+                <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Leaderboard Mid-August</div>
                 <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className='gap-6 flex flex-col'>
-                    <p className='font-[300] text-[#CCCCF8] leading-[22px]'>
+                    <p className='font-[300] text-[#CCCCF8] leading-[22px] max-w-[1200px]'>
                         If you've reached one or more tiers, you're eligible to claim rewards for those tiers. Register on <a href='https://app.onlydust.com/' target='_blank' className='underline'>OnlyDust</a> using your GitHub account, follow their rules, and complete KYC to receive your rewards. If you haven't reached a tier yet, keep contributing and adding value. Remember to avoid spam and pump talk at all times. 
                     </p>
                 </div>
-                <div className='flex justify-center md:justify-start w-full mt-10'>
-                    <LeaderboardTable data={leaderboardJune?.slice(0, 5)} pos={'justify-start'}/>
-                </div>
-                <div id="features_section" data-aos="fade-up" data-aos-delay="560" data-aos-duration="700" className="mt-10 flex justify-center items-center w-full">
+                <div id="features_section" data-aos="fade-up" data-aos-delay="560" data-aos-duration="700" className="mt-10 flex justify-start items-center w-full">
                     <Link to='/leaderboard'>
                         <FancyButton
                             src_img={startEarnPng}
@@ -132,6 +129,10 @@ const LearnMorePage = () => {
                         />
                     </Link>
                 </div>
+                <div className='flex justify-center md:justify-start w-full mt-10'>
+                    <LeaderboardTable data={leaderboardJune?.slice(0, 5)} pos={'justify-start'}/>
+                </div>
+               
             </div>
         </div>
         
