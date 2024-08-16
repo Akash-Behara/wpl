@@ -51,7 +51,7 @@ const LearnMorePage = () => {
   return (
     <>
     <DisableZoom />
-    <div className='pt-52 flex flex-col  mb-56 overflow-hidden'>
+    <div className='pt-32 lg:pt-52 flex flex-col  mb-56 overflow-hidden'>
 
         {/* Intro */}
         <div className='flex flex-col mb-32 mx-5 lg:mx-[130px]'>
