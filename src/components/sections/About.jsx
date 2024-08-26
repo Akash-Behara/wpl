@@ -55,7 +55,7 @@ const About = () => {
                                     </div>
                                     <div className='absolute bottom-7 md:bottom-6 w-full text-start ps-8 md:ps-10 pr-3'>
                                         <p className='lg:text-[20px] text-white font-gridular'>Are you a developer/builder?</p>
-                                        <p className='text-[14px] lg:text-[15px] text-[#CCCCF8] font-light font-inter mt-1'>You can now join the pack, and approved members can request to complete RFP's, earn based on milestones & build your proof of work</p>
+                                        <p className='text-[14px] lg:text-[15px] text-[#CCCCF8] font-light font-inter mt-1'>You can now join the pack, and approved members can request to complete bouties's, earn based on milestones & build your proof of work</p>
                                     </div>
                                 </CardItem>
                             </CardBody>
