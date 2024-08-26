@@ -64,7 +64,7 @@ const Hero = () => {
       <div className='size-full z-30 relative pt-20'>
         <div className='flex flex-col justify-center items-center mt-[100px]'>
           <div className='max-w-[1000px] flex flex-col justify-center items-center relative'>
-            <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="300" data-aos-easing="ease-in-out" className='font-gridular text-[42px] lg:text-[6.98em] text-primary text-center md:leading-[125px] uppercase'>Build Create, 
+            <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="300" data-aos-easing="ease-in-out" className='font-gridular text-[42px] lg:text-[6.98em] text-primary text-center md:leading-[125px] uppercase'>Build Create 
               <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="700" className='md:-translate-x-12 flex justify-center items-center gap-4 lg:gap-6'>Earn
                 <span ref={rewardRef} className='bg-[#E38070] text-[#1B1B83] text-[40px] lg:text-[84.17px] md:leading-[94.27px] md:px-5 tracking-[0.12rem] flex'>
                   <span class="letter">R</span>

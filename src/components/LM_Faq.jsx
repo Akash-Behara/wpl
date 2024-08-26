@@ -9,6 +9,10 @@ import {
 
 const faq = [
     {
+        title: 'Can users from the United States participate?',
+        content: 'We cannot accept contributors from the United States due to regulatory risks and contributors from sanctioned territories. We appreciate your understanding'
+    },
+    {
         title: 'What is the StarkWare Wolf Pack League inspired by?',
         content: 'The Wolf Pack League is inspired by LunarCrush (https://lunarcrush.com/earn) and Superteam (https://superteam.fun/). It will start with grassroots tools like Notion and Discord for the frontend, with a solid backend using CommonRoom and Onlydust.'
     },
