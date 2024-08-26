@@ -10,7 +10,7 @@ import {
 const faq = [
     {title: 'What is the WPL?', content: 'WPL is a contribution based Builder & Content Creator programme with the goal to incentivise high value participants and build an exclusive community of evangelists'},
     {title: 'How can one join the program?', content: 'This is an application gated program and you can request access by creating an account and completing your account creation process'},
-    {title: 'What are bounties?', content: 'Bounties are an exclusive milestones and RFP style earning opportunity for builders to participate individually or with teams and earn onchain'},
+    {title: 'What are bounties?', content: 'Bounties are an exclusive milestones and project based earning opportunity for builders to participate individually or with teams and earn onchain. Coming soon!'},
     {title: 'Who is eligible to apply for the WPL program?', content: 'Anyone with access to the internet can apply. We will prioritise acceptance based on your proof of work. Currently acceptance rates are very low to maintain a high bar of quality but do apply.'},
     {title: 'How will one know if they\'ve been accepted to WPL?', content: 'Your status on your profile page will change from "Under review" to "Accepted" and you\'ll receive a member badge. Unfortunately at this stage we will not be able to offer individual feedback to rejected applications but you can always re-apply with updated proof of work.'},
 ]
