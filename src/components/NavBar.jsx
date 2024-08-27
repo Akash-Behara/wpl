@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import wolfLogo from '../assets/svg/wolf_logo.svg'
 import GlyphEffect from './GlyphEffect'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 
 function NavBar() {
+  const { pathname } = useLocation()
 
   const [showNavbar, setShowNavbar] = useState(false)
 
@@ -32,7 +33,10 @@ function NavBar() {
         <div className='flex items-center gap-6'>
           <p onClick={() => document.getElementById('features_section').scrollIntoView({ behavior: 'smooth' })} className='text-primary text-[18px]'><GlyphEffect text={'EARN'}/></p>
           <Link to={'/leaderboard'} className='text-primary text-[18px]'><GlyphEffect text={'LEADERBOARD'}/></Link>
-          <p onClick={() => document.getElementById('faq_section').scrollIntoView({ behavior: 'smooth' })} className='text-primary text-[18px]'><GlyphEffect text={'FAQ'}/></p>
+          {pathname.includes('/leaderboard') 
+            ? <Link to={'/learnmore'} className='text-primary text-[18px]'><GlyphEffect text={'FAQ'}/></Link>
+            : <p onClick={() => document.getElementById('faq_section').scrollIntoView({ behavior: 'smooth' })} className='text-primary text-[18px]'><GlyphEffect text={'FAQ'}/></p>
+          }
         </div>
       </div>
 
