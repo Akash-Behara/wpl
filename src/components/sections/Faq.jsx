@@ -8,6 +8,10 @@ import {
 } from "../ui/accordion"
 
 const faq = [
+    {
+        title: 'Can users from the United States participate?',
+        content: 'We cannot accept contributors from the United States due to regulatory risks and contributors from sanctioned territories. We appreciate your understanding'
+    },
     {title: 'What is the WPL?', content: 'WPL is a contribution based Builder & Content Creator programme with the goal to incentivise high value participants and build an exclusive community of evangelists'},
     {title: 'How can one join the program?', content: 'This is an application gated program and you can request access by creating an account and completing your account creation process'},
     {title: 'What are bounties?', content: 'Bounties are an exclusive milestones and project based earning opportunity for builders to participate individually or with teams and earn onchain. Coming soon!'},
