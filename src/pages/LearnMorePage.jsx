@@ -95,7 +95,7 @@ const LearnMorePage = () => {
                         The WPL program is designed to be flexible, with point values and reward amounts potentially adjusted based on ongoing data analysis to ensure fairness and effectiveness. The number of points needed for each tier and corresponding USD rewards (paid in STRK) may change as we assess the program
                     </p>
                     <p className='font-[300] text-[#CCCCF8] leading-6'>
-                        Additionally, the program may be modified, suspended, or terminated at our discretion. Payouts will be processed through <a href='https://app.onlydust.com/' target='_blank' className='underline'>OnlyDust</a>, requiring registration and KYC with a GitHub username for eligibility. 
+                        Additionally, the program may be modified, suspended, or terminated at our discretion. Payouts will be processed through <a href='https://app.onlydust.com/' target='_blank' className='underline text-white'>OnlyDust</a>, requiring registration and KYC with a GitHub username for eligibility. 
                     </p>
                 </div>
                 <div className='flex justify-center md:justify-start w-full mt-12'>
@@ -114,7 +114,7 @@ const LearnMorePage = () => {
                 <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>Leaderboard Mid-August</div>
                 <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className='gap-6 flex flex-col'>
                     <p className='font-[300] text-[#CCCCF8] leading-[22px] max-w-[1200px]'>
-                        If you've reached one or more tiers, you're eligible to claim rewards for those tiers. Register on <a href='https://app.onlydust.com/' target='_blank' className='underline'>OnlyDust</a> using your GitHub account, follow their rules, and complete KYC to receive your rewards. If you haven't reached a tier yet, keep contributing and adding value. Remember to avoid spam and pump talk at all times. 
+                        If you've reached one or more tiers, you're eligible to claim rewards for those tiers. Register on <a href='https://app.onlydust.com/' target='_blank' className='underline text-white'>OnlyDust</a> using your GitHub account, follow their rules, and complete KYC to receive your rewards. If you haven't reached a tier yet, keep contributing and adding value. Remember to avoid spam and pump talk at all times. 
                     </p>
                 </div>
                 <div id="features_section" data-aos="fade-up" data-aos-delay="560" data-aos-duration="700" className="mt-10 flex justify-start items-center w-full">
