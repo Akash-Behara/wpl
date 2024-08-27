@@ -14,7 +14,7 @@ const faq = [
     // },
     {
         title: 'What is the StarkWare Wolf Pack League inspired by?',
-        content: <p>The Wolf Pack League is inspired by LunarCrush <a href='https://lunarcrush.com/earn' target='_blank'>(https://lunarcrush.com/earn)</a> and Superteam <a href='https://superteam.fun/' target='_blank'>(https://superteam.fun/)</a>. It will start with grassroots tools like Notion and Discord for the frontend, with a solid backend using CommonRoom and Onlydust.</p>
+        content: <p>The Wolf Pack League is inspired by <a href='https://lunarcrush.com/earn' target='_blank' className='text-primary underline'>LunarCrush</a> and  <a href='https://superteam.fun/' target='_blank' className='text-primary underline'>Superteam</a>. It will start with grassroots tools like Notion and Discord for the frontend, with a solid backend using CommonRoom and Onlydust.</p>
     },
     {
         title: 'How will previous community involvement be taken into account?',
@@ -22,7 +22,7 @@ const faq = [
     },
     {
         title: 'How will activity be tracked?',
-        content: <p>Activity will be tracked using CommonRoom <a href='https://www.commonroom.io/' target='_blank'>(https://www.commonroom.io/)</a>, a tool StarkWare has been testing for 2 years. The setup is similar to LunarCrush but with a much broader universe of platforms not only focused on Twitter/X.</p>
+        content: <p>Activity will be tracked using  <a href='https://www.commonroom.io/' target='_blank' className='text-primary underline'>CommonRoom</a>, a tool StarkWare has been testing for 2 years. The setup is similar to LunarCrush but with a much broader universe of platforms not only focused on Twitter/X.</p>
     },
     {
         title: 'What mechanisms are in place to prevent spam and gaming of the system?',
@@ -46,7 +46,7 @@ const faq = [
     },
     {
         title: 'Will there be bounties from ecosystem projects?',
-        content: <p>Yes, similar to Superteam\'s bounties <a href='https://earn.superteam.fun/bounties/' target='_parent'>(https://earn.superteam.fun/bounties/)</a>, each whitelisted project will be able to list its own bounties. This is a high priority but will not be live from day one.</p>
+        content: <p>Yes, similar to  <a href='https://earn.superteam.fun/bounties/' target='_parent' className='text-primary underline'>Superteam\'s bounties</a>, each whitelisted project will be able to list its own bounties. This is a high priority but will not be live from day one.</p>
     },
     {
         title: 'Are team members of Starknet projects eligible to participate as Wolves?',
@@ -78,7 +78,7 @@ const faq = [
     },
     {
         title: 'How often are rewards issued?',
-        content: <p>Participants are eligible to claim their STRK rewards via [OnlyDust]<a href='https://www.onlydust.com/' target='_blank'>(https://www.onlydust.com/)</a> (after completing KYC) as soon as they reach a new tier. Points and tier levels will be updated monthly.</p>
+        content: <p>Participants are eligible to claim their STRK rewards via <a href='https://www.onlydust.com/' target='_blank' className='text-primary underline'>OnlyDust</a> (after completing KYC) as soon as they reach a new tier. Points and tier levels will be updated monthly.</p>
     },
     {
         title: 'Will the details of point allocation, such as weights for different platforms and inactivity penalties, be shared?',
@@ -91,7 +91,7 @@ const faq = [
     ,
     {
         title: 'Is there a channel for participants to appeal if they feel points have been allocated incorrectly?',
-        content: <p>All communication related to the program will take place in the new role-gated WPL channel on [Starknet Discord]<a href='https://starknet.io/discord' target='_blank'>(https://starknet.io discord)</a>.</p>
+        content: <p>All communication related to the program will take place in the new role-gated WPL channel on <a href='https://starknet.io/discord' target='_blank' className='text-primary underline'>Starknet Discord</a>.</p>
     }
     
 ]
