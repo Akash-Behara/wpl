@@ -7,6 +7,9 @@ import FancyButton from '../FancyButton'
 import joinSubtractPng from '../../assets/subtract_png/join_subtract.png'
 import joinSubtractHoverPng from '../../assets/subtract_png/join_subtract_hover.png'
 
+import leftBlueBtnBorder from '../../assets/C.png'
+import rightBlueBtnBorder from '../../assets/D.png'
+
 const Footer = () => {
 
  return (
@@ -18,16 +21,11 @@ const Footer = () => {
         <div className='flex flex-col md:flex-row justify-center md:justify-between items-center w-full h-full'>
           <div className='translate-y-36 md:translate-y-14 flex flex-col justify-center md:justify-start items-center md:items-start'>
             <h2 className='text-[#16237F] font-gridular text-[24px] md:text-[48px] leading-[26px] md:leading-[52px] max-w-[627px] uppercase text-center md:text-start'>become a part of wpl to earn rewards</h2>
-            {/* <FancyButton
-              src_img={joinSubtractPng}
-              hover_src_img={joinSubtractHoverPng}
-              img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
-              className='font-gridular text-[#10105E] text-[14px] md:text-[24px]'
-              btn_txt='Apply Now'
-              alt_txt=''
-              isArrow={true}
-            /> */}
-            <button className='bg-[#16237F] text-white font-bienvenue text-[20px] md:text-[24px] px-6 py-1 flex justify-center items-center mt-4'>Apply now</button>
+            <div className='h-[40px] md:h-[50px] w-[160px] md:w-[200px]  flex items-center mt-1 cursor-pointer'>
+              <img src={leftBlueBtnBorder} alt='' className='size-full w-[20px]'/>
+              <div className='text-white h-full w-full flex justify-center items-center bg-[#1C256B] font-gridular uppercase text-[16px] lg:text-[20px]'>Apply Now</div>
+              <img src={rightBlueBtnBorder} alt='' className='size-full w-[20px]'/>
+            </div>
 
           </div>
           <div className='flex justify-end items-end text-center md:text-start gap-10 h-full max-w-fit mb-10 -translate-y-2'>
