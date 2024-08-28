@@ -34,7 +34,7 @@ function NavBar() {
           <p onClick={() => document.getElementById('features_section').scrollIntoView({ behavior: 'smooth' })} className='text-primary text-[18px]'><GlyphEffect text={'EARN'}/></p>
           <Link to={'/leaderboard'} className='text-primary text-[18px]'><GlyphEffect text={'LEADERBOARD'}/></Link>
           {pathname.includes('/leaderboard') 
-            ? <Link to={'/learnmore'} className='text-primary text-[18px]'><GlyphEffect text={'FAQ'}/></Link>
+            ? <Link to={'/learnmore'} state={'fromHomePage'} className='text-primary text-[18px]'><GlyphEffect text={'FAQ'}/></Link>
             : <p onClick={() => document.getElementById('faq_section').scrollIntoView({ behavior: 'smooth' })} className='text-primary text-[18px]'><GlyphEffect text={'FAQ'}/></p>
           }
         </div>

@@ -43,7 +43,7 @@ const Faq = () => {
             </Accordion>
         </div>
 
-        <Link to={'/learnmore'}>
+        <Link to={'/learnmore'} state={'fromHomePage'}>
             <FancyButton
                 src_img={startEarnPng}
                 hover_src_img={startEarnHoverPng}
