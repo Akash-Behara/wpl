@@ -18,7 +18,7 @@ const LeaderBoardPage = () => {
   const [tableHeight, setTableHeight] = useState(0);
 
 
-  const API_URI = import.meta.env.VITE_SPREADSHEET_API_URL
+  const API_URI = import.meta.env.VITE_SPREADSHEET_API_URL_NEW
   const token = import.meta.env.VITE_TOKEN
   const headers = { 'Authorization': `Bearer ${token}`}
 
@@ -29,12 +29,14 @@ const LeaderBoardPage = () => {
       const response = (await axios({
         method: 'GET',
         url: API_URI,
-        headers: headers
+        // headers: headers
       })).data;
       response.shift();
       setData(response);
       setIsLoading(false);
+      console.log('response', response);
     }
+
     getData();
   }, []);
 
