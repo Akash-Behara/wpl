@@ -16,7 +16,7 @@ const LeaderboardTable = ({data, pos}) => {
       } else if (index === 3) {
         widths[key] = 'w-[20px] md:w-[100px] lg:w-[125px]';
       } else {
-        widths[key] = 'w-[40px] md:w-[150px] lg:w-[182px]';
+        widths[key] = 'w-[40px] md:w-[150px] lg:w-[150px]';
       }
     });
     return widths;
