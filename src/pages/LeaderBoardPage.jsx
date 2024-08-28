@@ -34,7 +34,6 @@ const LeaderBoardPage = () => {
       response.shift();
       setData(response);
       setIsLoading(false);
-      console.log('response', response);
     }
 
     getData();
