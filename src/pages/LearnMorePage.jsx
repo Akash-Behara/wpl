@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import KF_Card from '../components/KF_Card'
 import LM_Faq from '../components/LM_Faq'
 import LM_Marquee from '../components/LM_Marquee'
 import { leaderboardJune, tiers_points_data } from '../utils/leaderboard_dummy_data'
 import LeaderboardTable from '../components/LeaderBoardTable'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import FancyButton from '../components/FancyButton'
 
 import startEarnPng from '../assets/subtract_png/start_earn.png'
@@ -48,6 +48,16 @@ const keyFeatureData = [
 
 
 const LearnMorePage = () => {
+
+    const locState = useLocation().state
+
+
+    useEffect(() => {
+        if(locState && locState == "fromHomePage"){
+            document.getElementById('faq_section').scrollIntoView({ behavior: 'smooth' })
+        }
+    }, [])
+
   return (
     <>
     <DisableZoom />
@@ -74,7 +84,7 @@ const LearnMorePage = () => {
         </div>
 
         {/* FAQ */}
-        <div className="flex flex-col mb-12 mx-5 lg:mx-[130px]">
+        <div id='faq_section' className="flex flex-col mb-12 mx-5 lg:mx-[130px]">
             <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" className='text-[36px] md:text-[48px] leading-[45.6px] font-bienvenue text-[#FAF1B1] uppercase mb-10'>StarkWare Wolf Pack League FAQ</div>
             <LM_Faq />
         </div>
