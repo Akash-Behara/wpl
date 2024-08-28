@@ -31,7 +31,7 @@ const LeaderBoardPage = () => {
         url: API_URI,
         // headers: headers
       })).data;
-      response.shift();
+      // response.shift();
       setData(response);
       setIsLoading(false);
     }
