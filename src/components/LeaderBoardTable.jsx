@@ -8,11 +8,15 @@ const LeaderboardTable = ({data, pos}) => {
     const widths = {};
     headerColumns.forEach((key, index) => {
       if (index === 0) {
-        widths[key] = 'w-[60px] md:w-[100px] lg:w-[157px]';
+        widths[key] = 'w-[15px] md:w-[50px] lg:w-[50px]';
       } else if (index === 1) {
-        widths[key] = 'w-[120px] md:w-[190px] lg:w-[380px]';
+        widths[key] = 'w-[40px] md:w-[170px] lg:w-[190px]';
+      } else if (index === 2) {
+        widths[key] = 'w-[25px] md:w-[100px] lg:w-[125px]';
+      } else if (index === 3) {
+        widths[key] = 'w-[20px] md:w-[100px] lg:w-[125px]';
       } else {
-        widths[key] = 'w-[110px] md:w-[180px] lg:w-[302px]';
+        widths[key] = 'w-[40px] md:w-[150px] lg:w-[182px]';
       }
     });
     return widths;
