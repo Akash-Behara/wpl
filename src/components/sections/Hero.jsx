@@ -85,23 +85,17 @@ const Hero = () => {
             <img src={bgYellowElRight} alt='yellow element' className='absolute -top-12 lg:-top-16 right-4 md:-right-12 size-6 md:size-14'/>
           </div>
           <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="700" className='font-gridular mt-12 flex items-center gap-4 md:text-[24px]'>
-            <FancyButton
-              src_img={joinSubtractPng}
-              hover_src_img={joinSubtractHoverPng}
-              img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
-              className='font-gridular text-[#10105E] text-[14px] md:text-[24px]'
-              btn_txt='Join the pack'
-              alt_txt='join pack button'
-              isArrow={true}
-            />
-            <FancyButton
-              src_img={startEarnPng}
-              hover_src_img={startEarnHoverPng}
-              img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
-              className='font-gridular text-white text-[14px] md:text-[24px]'
-              btn_txt='Coming soon'
-              alt_txt='redacted button'
-            />
+            <a href='https://form.typeform.com/to/jPgPdA8l' target='_blank'>
+              <FancyButton
+                src_img={joinSubtractPng}
+                hover_src_img={joinSubtractHoverPng}
+                img_size_classes='w-[146px] md:w-[318px] h-[36.5px] md:h-[65px]'
+                className='font-gridular text-[#10105E] text-[14px] md:text-[24px]'
+                btn_txt='Join the pack'
+                alt_txt='join pack button'
+                isArrow={true}
+              />
+            </a>
           </div>
         </div>
       </div>
