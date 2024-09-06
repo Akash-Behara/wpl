@@ -174,15 +174,17 @@ const MarqueeSection = () => {
         </div>
 
         <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" className="mt-16 hidden md:block">
-            <FancyButton
-                src_img={joinSubtractPng}
-                hover_src_img={joinSubtractHoverPng}
-                img_size_classes='w-[208px] md:w-[318px] h-[36.5px] md:h-[65px]'
-                className='font-gridular text-[#10105E] text-[14px] md:text-[24px]'
-                btn_txt='Join the Mission'
-                alt_txt='join mission button'
-                isArrow={true}
-            />
+            <a href='https://form.typeform.com/to/jPgPdA8l' target='_blank' >
+                <FancyButton
+                    src_img={joinSubtractPng}
+                    hover_src_img={joinSubtractHoverPng}
+                    img_size_classes='w-[208px] md:w-[318px] h-[36.5px] md:h-[65px]'
+                    className='font-gridular text-[#10105E] text-[14px] md:text-[24px]'
+                    btn_txt='Join the Mission'
+                    alt_txt='join mission button'
+                    isArrow={true}
+                />
+            </a>
         </div>
     </div>
   )
