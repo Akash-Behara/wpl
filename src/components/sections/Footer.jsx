@@ -23,7 +23,7 @@ const Footer = () => {
             <h2 className='text-[#16237F] font-gridular text-[24px] md:text-[48px] leading-[26px] md:leading-[52px] max-w-[627px] uppercase text-center md:text-start'>become a part of wpl to earn rewards</h2>
             <div className='h-[40px] md:h-[50px] w-[160px] md:w-[200px]  flex items-center mt-1 cursor-pointer'>
               <img src={leftBlueBtnBorder} alt='' className='size-full w-[20px]'/>
-              <div className='text-white h-full w-full flex justify-center items-center bg-[#1C256B] font-gridular uppercase text-[16px] lg:text-[20px]'>Apply Now</div>
+              <a href='https://form.typeform.com/to/jPgPdA8l' target='_blank' className='text-white h-full w-full flex justify-center items-center bg-[#1C256B] font-gridular uppercase text-[16px] lg:text-[20px]'>Apply Now</a>
               <img src={rightBlueBtnBorder} alt='' className='size-full w-[20px]'/>
             </div>
 
